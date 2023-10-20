@@ -6,7 +6,7 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     public GameObject player;
-    //private Vector3 offset;
+    private Vector3 offset;
     public float sensX;
     public float sensY;
     public Transform orientation;
@@ -17,7 +17,7 @@ public class CameraController : MonoBehaviour
     void Start(){
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        //offset = transform.position ;
+        offset = transform.position ;
     }
 
     private void Update(){
@@ -40,9 +40,9 @@ public class CameraController : MonoBehaviour
     }
 
     //cam behind player
-    /*void LateUpdate(){
+    void LateUpdate(){
         transform.position = player.transform.position + offset;
-    }*/
+    }
 
 }
 
