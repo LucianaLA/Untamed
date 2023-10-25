@@ -8,8 +8,10 @@ public class BasicNeeds : MonoBehaviour
     
     public GameObject lose_popup;
     public Image hunger_bar_foreground;
+    public GameObject health_bar_foreground;
+    public GameObject background;
     float hunger_remaining;
-    public float hunger_max = 5.0f;
+    public float hunger_max = 60.0f;
     
     // Start is called before the first frame update
     void Start()
@@ -27,6 +29,8 @@ public class BasicNeeds : MonoBehaviour
         }
         else{
             lose_popup.SetActive(true);
+            health_bar_foreground.SetActive(false);
+            background.SetActive(true);
 
         }
     }
