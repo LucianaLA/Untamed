@@ -62,13 +62,14 @@ private float RotationSpeed = 15;
     // trying to rotate player with camera/mouse
     private void RotationPlayer(){
 
-        MousePositionViewport = Camera.main.ScreenToViewportPoint (Input.mousePosition);
-    if (MousePositionViewport.x >= 0.6f) {
+    if (Input.GetKey("a")) {
+         DesiredRotation = Quaternion.Euler (0, -180, 0);
+    } else if(Input.GetKey("d")){
+        DesiredRotation = Quaternion.Euler (0, 0, 0);
+    } else if(Input.GetKey("s")){
         DesiredRotation = Quaternion.Euler (0, 90, 0);
-    } else if(MousePositionViewport.x < 0.6f && MousePositionViewport.x > 0.4f){
-        DesiredRotation = Quaternion.Euler (0, 270, 0);
     }else {
-        DesiredRotation = Quaternion.Euler (0, 180, 0);
+        DesiredRotation = Quaternion.Euler (0, -90, 0);
     }
     transform.rotation = Quaternion.Lerp (transform.rotation, DesiredRotation, Time.deltaTime*RotationSpeed);
     }

@@ -20,5 +20,11 @@ public class AnimationStateController : MonoBehaviour
         } else{
             animator.SetBool("isWalking", false);
         }
+
+        if (Input.GetKey("space")){
+            animator.SetBool("isJumping", true);
+        } else{
+            animator.SetBool("isJumping", false);
+        }
     }
 }
