@@ -19,7 +19,11 @@ public class PlayerController : MonoBehaviour
 
     float horizontalInput;
     float verticalInput;
-///
+/// 
+private Vector3 MousePositionViewport = Vector3.zero;
+private Quaternion DesiredRotation = new Quaternion();
+private float RotationSpeed = 15;
+/// 
     float mouseX;
     float mouseY = 100;
 
@@ -42,7 +46,7 @@ public class PlayerController : MonoBehaviour
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.7f+0.2f, isGround);
         MyInput();
 
-        //RotationPlayer(mouseX, mouseY);
+        RotationPlayer();
 
         // handle drag
         if (grounded)
@@ -56,12 +60,17 @@ public class PlayerController : MonoBehaviour
     }
 
     // trying to rotate player with camera/mouse
-    private void RotationPlayer(float x, float y){
-        xRotation += y;
-        yRotation += x;
-        transform.rotation = Quaternion.Euler(0, yRotation *100, 0);
-        orientation.rotation = Quaternion.Euler(xRotation,  0, 0);
-        transform.position = player.transform.position;
+    private void RotationPlayer(){
+
+        MousePositionViewport = Camera.main.ScreenToViewportPoint (Input.mousePosition);
+    if (MousePositionViewport.x >= 0.6f) {
+        DesiredRotation = Quaternion.Euler (0, 90, 0);
+    } else if(MousePositionViewport.x < 0.6f && MousePositionViewport.x > 0.4f){
+        DesiredRotation = Quaternion.Euler (0, 270, 0);
+    }else {
+        DesiredRotation = Quaternion.Euler (0, 180, 0);
+    }
+    transform.rotation = Quaternion.Lerp (transform.rotation, DesiredRotation, Time.deltaTime*RotationSpeed);
     }
 
     private void MyInput(){
