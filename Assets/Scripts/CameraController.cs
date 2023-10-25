@@ -33,9 +33,12 @@ public class CameraController : MonoBehaviour
         // rotate cam and orientation
         transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
         orientation.rotation = Quaternion.Euler(0, yRotation, 0);
-        transform.position = cameraPosition.position;
-        //player.transform.rotation.x = Quaternion.Euler(xRotation, 0);
-        //orientation.rotation = Quaternion.Euler(player.transform.rotation.y, 0, yRotation);
+        // get x movement from camera to move around player
+        //var theta = (float) 1.5 * Mathf.Sin(xRotation/2);
+        //float xmove = theta;
+        //Vector3 moveCam = new Vector3(xmove, 0.0f, 0.0f);
+        transform.position = cameraPosition.position; //+ moveCam;
+
 
     }
 
