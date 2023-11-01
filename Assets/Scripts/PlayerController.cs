@@ -5,6 +5,10 @@ using UnityEngine;
 using UnityEngine.InputSystem; 
 public class PlayerController : MonoBehaviour 
 {
+//rotation
+    public float horizontalSpeed = 2.0F;
+     public float verticalSpeed = 2.0F;
+     //.rotation
     [Header("Movement")]
     public float moveSpeed;
 
@@ -45,8 +49,11 @@ private float RotationSpeed = 15;
         //ground check
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.7f+0.2f, isGround);
         MyInput();
+        float h = horizontalSpeed * Input.GetAxis("Mouse X");
+         float v = verticalSpeed * Input.GetAxis("Mouse Y");
+         transform.Rotate(v, h, 0);
 
-        RotationPlayer();
+        //RotationPlayer();
 
         // handle drag
         if (grounded)

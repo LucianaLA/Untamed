@@ -27,9 +27,9 @@ public class CameraController : MonoBehaviour
 
         yRotation += mouseX;
         xRotation -= mouseY;
-        //stop from rotating too much
+        //stop from rotating too much (took out x limit bc its better like this tbh)
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
-        yRotation = Mathf.Clamp(yRotation, -90f, 90f);
+        //yRotation = Mathf.Clamp(yRotation, -90f, 90f);
         // rotate cam and orientation
         transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
         orientation.rotation = Quaternion.Euler(0, yRotation, 0);
