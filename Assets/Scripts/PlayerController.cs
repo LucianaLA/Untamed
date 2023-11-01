@@ -42,6 +42,9 @@ private float RotationSpeed = 15;
 
     public float hungerCount;
 
+    public float speedMultiplier;
+    public float currentSpeed;
+
     private void Start(){
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
@@ -90,6 +93,12 @@ private float RotationSpeed = 15;
         //trying to move with mouse direction
         mouseX = Input.GetAxisRaw("Mouse X");
         mouseY = Input.GetAxisRaw("Mouse Y");
+
+        /*while(Input.GetKeyDown(KeyCode.LeftShift)){
+            moveSpeed = moveSpeed * 3 ;
+        }*/
+
+        // if(Input.GetKey("space"))
     }
 
 
@@ -102,8 +111,13 @@ private float RotationSpeed = 15;
 
     private void MovePlayer(){
         //calc move direction
+        if(Input.GetKey(KeyCode.LeftShift)){
+            currentSpeed = moveSpeed * speedMultiplier;
+        } else {
+            currentSpeed = moveSpeed;
+        }
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;// * mouseX; //mouseY;
-        rb.AddForce(moveDirection.normalized * moveSpeed * 10F, ForceMode.Force);
+        rb.AddForce(moveDirection.normalized * currentSpeed * 10F, ForceMode.Force);
     }
 
     //simple movement
