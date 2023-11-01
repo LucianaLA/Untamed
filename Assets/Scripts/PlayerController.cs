@@ -45,6 +45,8 @@ private float RotationSpeed = 15;
     public float speedMultiplier;
     public float currentSpeed;
 
+    public float jumpForce;
+
     private void Start(){
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
@@ -93,12 +95,6 @@ private float RotationSpeed = 15;
         //trying to move with mouse direction
         mouseX = Input.GetAxisRaw("Mouse X");
         mouseY = Input.GetAxisRaw("Mouse Y");
-
-        /*while(Input.GetKeyDown(KeyCode.LeftShift)){
-            moveSpeed = moveSpeed * 3 ;
-        }*/
-
-        // if(Input.GetKey("space"))
     }
 
 
@@ -116,20 +112,13 @@ private float RotationSpeed = 15;
         } else {
             currentSpeed = moveSpeed;
         }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.AddForce(Vector3.up * jumpForce,ForceMode.Impulse);
+        }
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;// * mouseX; //mouseY;
         rb.AddForce(moveDirection.normalized * currentSpeed * 10F, ForceMode.Force);
     }
-
-    //simple movement
-    /*public Vector2 moveValue; 
-    public float speed; 
-    void OnMove(InputValue value) { 
-        moveValue = value.Get<Vector2>(); 
-        } 
-        
-    void FixedUpdate() { 
-        Vector3 movement = new Vector3(moveValue.x, 0.0f, moveValue.y); 
-        GetComponent<Rigidbody>().AddForce(movement * speed * Time.fixedDeltaTime);
-    } */
 
 }

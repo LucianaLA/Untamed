@@ -511,8 +511,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 7141238648481148417}
-  sensX: 100
-  sensY: 100
+  sensX: 200
+  sensY: 200
   orientation: {fileID: 1338253987}
   cameraPosition: {fileID: 1394165983}
 --- !u!20 &481471614
@@ -627,8 +627,9 @@ MonoBehaviour:
   orientation: {fileID: 1338253987}
   player: {fileID: 7141238648481148417}
   hungerCount: 20
-  speedMultiplier: 3
+  speedMultiplier: 4
   currentSpeed: 20
+  jumpForce: 20
 --- !u!1 &581859985
 GameObject:
   m_ObjectHideFlags: 0
