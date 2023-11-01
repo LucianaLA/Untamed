@@ -40,6 +40,8 @@ private float RotationSpeed = 15;
 
     Rigidbody rb;
 
+    public float hungerCount;
+
     private void Start(){
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
@@ -88,6 +90,14 @@ private float RotationSpeed = 15;
         //trying to move with mouse direction
         mouseX = Input.GetAxisRaw("Mouse X");
         mouseY = Input.GetAxisRaw("Mouse Y");
+    }
+
+
+    void OnTriggerEnter(Collider other) {
+        if(other.gameObject.tag == "PickUp") {
+            other.gameObject.SetActive(false);
+            BasicNeeds.hunger_remaining += hungerCount;
+        }
     }
 
     private void MovePlayer(){

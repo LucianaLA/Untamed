@@ -10,7 +10,7 @@ public class BasicNeeds : MonoBehaviour
     public Image hunger_bar_foreground;
     public GameObject health_bar_foreground;
     public GameObject background;
-    float hunger_remaining;
+    public static float hunger_remaining;
     public float hunger_max = 60.0f;
     
     // Start is called before the first frame update
