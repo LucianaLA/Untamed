@@ -822,15 +822,15 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 
+  cloudProjectId: 6b80b5b2-cbd3-4f7c-848a-3274abdf3d9e
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: Untamed
+  organizationId: luclop
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage:
     fileID: 0
   virtualTexturingSupportEnabled: 0
   insecureHttpOption: 0
-  genesisOrgId: 
+  genesisOrgId: '5773412190836'
