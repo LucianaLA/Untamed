@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
@@ -115,10 +116,15 @@ private float RotationSpeed = 15;
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            rb.AddForce(Vector3.up * jumpForce,ForceMode.Impulse);
+            rb.AddForce(Vector3.up * jumpForce * rb.mass, ForceMode.Impulse);
+            Invoke("Down",0.4f);
         }
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;// * mouseX; //mouseY;
         rb.AddForce(moveDirection.normalized * currentSpeed * 10F, ForceMode.Force);
+    }
+
+    private void Down(){
+        rb.AddForce(Vector3.down * jumpForce * rb.mass, ForceMode.Impulse);
     }
 
 }
