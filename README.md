@@ -23,7 +23,11 @@ Go wild, untamed child!
 
 References
 All Things Game Dev (2022) How To Make An FPS Player In Under A Minute - Unity Tutorial - Available at: https://www.youtube.com/watch?v=qQLvcS9FxnY (Accessed 02/11/2023)
+
 Dave / GameDevelopment (2022) FIRST PERSON MOVEMENT in 10 MINUTES - Unity Tutorial Available at: https://youtu.be/f473C43s8nE?si=HdD8u5RVlUbn8Wcj (Accessed 18/10/2023)
+
 The Game Dev Cave (2022) How to Make A Randomly Walking A.I. in Unity - Available at: https://www.youtube.com/watch?v=-Iwsz4gdgyQ (Accessed 02/11/2023)
+
 The Game Dev Cave (2022) Unity - How to make A Chasing Enemy - Available at: https://www.youtube.com/watch?v=xtJgi8SblIk (Accessed 02/11/2023)
+
 The Ultimate Developer (2020) LINEAR - RADIAL TIMER COUNTDOWN | Unity Tutorials C# Available at: https://www.youtube.com/watch?v=4g7YY9tLxEE (Accessed 19/10/2023)
