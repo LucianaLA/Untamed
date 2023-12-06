@@ -74,6 +74,10 @@ public class FPSController : MonoBehaviour
             playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * rotationSpeed, 0);
         }
+
+        if (BasicNeeds.win_check == true || BasicNeeds.is_dead == true){
+            GameOver();
+        }
     }
 
 
@@ -93,5 +97,10 @@ public class FPSController : MonoBehaviour
             BasicNeeds.hunger_remaining += hungerCount;
             Debug.Log("Hunger increased");
         }
+    }
+
+    void GameOver(){
+        enableMove = false;
+        enableRunning = false;
     }
 }
