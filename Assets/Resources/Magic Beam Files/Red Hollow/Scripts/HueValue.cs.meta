@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 8078ffa551afb444aa7e2959d7b3018c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 212627
+  packageName: Red Hollow - Gojo Satoru Skill
+  packageVersion: 1.0
+  assetPath: Assets/YSA VFX/Red Hollow/Scripts/HueValue.cs
+  uploadId: 478578
