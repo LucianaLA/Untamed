@@ -1787,6 +1787,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdaec09263679dc409a0fd349d134332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemy_health: 100
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -3607,6 +3608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdaec09263679dc409a0fd349d134332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemy_health: 100
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -4038,6 +4040,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   combatController: {fileID: 1738457655}
   EnemyDrop: {fileID: 0}
+  fPSController: {fileID: 0}
 --- !u!1 &575744187
 GameObject:
   m_ObjectHideFlags: 0
@@ -5836,6 +5839,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdaec09263679dc409a0fd349d134332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemy_health: 100
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -6304,6 +6308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdaec09263679dc409a0fd349d134332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemy_health: 100
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -8639,6 +8644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdaec09263679dc409a0fd349d134332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemy_health: 100
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -9305,6 +9311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdaec09263679dc409a0fd349d134332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemy_health: 100
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -9609,6 +9616,9 @@ MonoBehaviour:
   enableMove: 1
   combatController: {fileID: 1738457655}
   Combat: {fileID: 1738457653}
+  attack_power: 10
+  attack_energy: 0
+  energyFull: 0
   hungerCount: 20
   healthCount: 5
 --- !u!4 &1714601328
@@ -9725,6 +9735,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   combatController: {fileID: 1738457655}
   EnemyDrop: {fileID: 1639120684}
+  fPSController: {fileID: 1714601327}
 --- !u!1 &1807578437
 GameObject:
   m_ObjectHideFlags: 0
@@ -10888,6 +10899,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdaec09263679dc409a0fd349d134332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemy_health: 100
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -11041,6 +11053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdaec09263679dc409a0fd349d134332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemy_health: 100
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -11194,6 +11207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdaec09263679dc409a0fd349d134332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemy_health: 100
   groundLayer:
     serializedVersion: 2
     m_Bits: 128

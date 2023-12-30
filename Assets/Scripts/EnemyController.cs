@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class EnemyController : MonoBehaviour
 {
+    //enemy stats
+    public float enemy_health = 100;
     GameObject player;
     NavMeshAgent enemy;
     Rigidbody rb;
@@ -77,6 +80,14 @@ public class EnemyController : MonoBehaviour
         if (Physics.Raycast(newDestination, Vector3.down, groundLayer))
         {
             enableWalk = true;
+        }
+    }
+
+    public void EnemyDeath(GameObject Enemy){
+        if (enemy_health <= 0){
+            Debug.Log("Enemy died: "+ Enemy);
+            Enemy.gameObject.SetActive(false);
+            enemy_health = 100;
         }
     }
 }

@@ -43,13 +43,12 @@ public class CombatController : MonoBehaviour
 
     IEnumerator ResetAttackCooldown(){
         StartCoroutine(ResetAttackBool());
-        StartCoroutine(ResetDropCD());
+        StartCoroutine(ResetEnemyDropCD());
         yield return new WaitForSeconds(attackCooldown);
         canAttack = true;
-        // canSpawn = true;
     }
 
-    IEnumerator ResetDropCD(){
+    IEnumerator ResetEnemyDropCD(){
         yield return new WaitForSeconds(attackCooldown * 1.5f);
         canSpawn=true;
     }

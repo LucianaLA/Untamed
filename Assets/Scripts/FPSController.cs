@@ -25,6 +25,10 @@ public class FPSController : MonoBehaviour
     public CombatController combatController;
 
     public GameObject Combat;
+
+    public float attack_power = 10f;
+    public float attack_energy = 0;
+    public bool energyFull = false;
     //player stats
     public float hungerCount;
     public float healthCount;
@@ -78,6 +82,7 @@ public class FPSController : MonoBehaviour
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * rotationSpeed, 0);
         }
         GameOverCheck();
+        EnergyManagement();
     }
 
 
@@ -99,8 +104,14 @@ public class FPSController : MonoBehaviour
         }
          if (other.gameObject.tag == "EnemyDrop"){
             other.gameObject.SetActive(false);
-            //add to inventory or add exp?
+            attack_energy += 1; //increase energy via picking up drops
             Debug.Log("Pickup enemy drop");
+        }
+    }
+
+    public void EnergyManagement(){
+        if (attack_energy >= 5){
+            energyFull = true; // when 5 or more drops picked up, enables stronger attack
         }
     }
 
