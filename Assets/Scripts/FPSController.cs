@@ -95,12 +95,19 @@ public class FPSController : MonoBehaviour
         }
     }
 
+    IEnumerator Respawn(Collider other, int time)
+    {
+        yield return new WaitForSeconds(time);
+        other.gameObject.SetActive(true);
+    }
     //colliding with pickups
     void OnTriggerEnter(Collider other) {
         if(other.gameObject.tag == "PickUp") {
             other.gameObject.SetActive(false);
             BasicNeeds.hunger_remaining += hungerCount;
             Debug.Log("Hunger increased");
+            //set respawn time
+            StartCoroutine(Respawn(other, 25));
         }
          if (other.gameObject.tag == "EnemyDrop"){
             other.gameObject.SetActive(false);
