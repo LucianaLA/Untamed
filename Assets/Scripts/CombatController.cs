@@ -10,6 +10,7 @@ public class CombatController : MonoBehaviour
     public float attackCooldown = 1.0f;
 
     public bool isAttacking = false;
+    public bool canSpawn = true; //checks if new enemy drop can be spawned
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,8 @@ public class CombatController : MonoBehaviour
         isAttacking = true;
         // cannot attack while attacking
         canAttack = false;
+
+        canSpawn = false;
         // adding animations 
         Animator anim = ShortSwordPrefab.GetComponent<Animator>();
         anim.SetTrigger("Attack");
@@ -39,9 +42,16 @@ public class CombatController : MonoBehaviour
     }
 
     IEnumerator ResetAttackCooldown(){
-        StartCoroutine(ResetAttackCooldown());
+        StartCoroutine(ResetAttackBool());
+        StartCoroutine(ResetDropCD());
         yield return new WaitForSeconds(attackCooldown);
         canAttack = true;
+        // canSpawn = true;
+    }
+
+    IEnumerator ResetDropCD(){
+        yield return new WaitForSeconds(attackCooldown * 1.5f);
+        canSpawn=true;
     }
 
     IEnumerator ResetAttackBool(){

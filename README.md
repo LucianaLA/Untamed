@@ -31,3 +31,5 @@ The Game Dev Cave (2022) How to Make A Randomly Walking A.I. in Unity - Availabl
 The Game Dev Cave (2022) Unity - How to make A Chasing Enemy - Available at: https://www.youtube.com/watch?v=xtJgi8SblIk (Accessed 02/11/2023)
 
 The Ultimate Developer (2020) LINEAR - RADIAL TIMER COUNTDOWN | Unity Tutorials C# Available at: https://www.youtube.com/watch?v=4g7YY9tLxEE (Accessed 19/10/2023)
+
+Zyger (2021) Melee Combat & Weapon System - Unity Beginner Tutorial https://www.youtube.com/watch?v=aNZw588BQBo (Accessed 23/12/2023)

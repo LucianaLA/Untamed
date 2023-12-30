@@ -21,7 +21,10 @@ public class FPSController : MonoBehaviour
     public bool enableRunning;
     public bool enableMove = true;
     CharacterController characterController;
+    //COMBAT SYSTEM 
+    public CombatController combatController;
 
+    public GameObject Combat;
     //player stats
     public float hungerCount;
     public float healthCount;
@@ -74,10 +77,7 @@ public class FPSController : MonoBehaviour
             playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * rotationSpeed, 0);
         }
-
-        if (BasicNeeds.win_check == true || BasicNeeds.is_dead == true){
-            GameOver();
-        }
+        GameOverCheck();
     }
 
 
@@ -97,10 +97,18 @@ public class FPSController : MonoBehaviour
             BasicNeeds.hunger_remaining += hungerCount;
             Debug.Log("Hunger increased");
         }
+         if (other.gameObject.tag == "EnemyDrop"){
+            other.gameObject.SetActive(false);
+            //add to inventory or add exp?
+            Debug.Log("Pickup enemy drop");
+        }
     }
 
-    void GameOver(){
-        enableMove = false;
-        enableRunning = false;
+    public void GameOverCheck(){
+        if (BasicNeeds.win_check == true || BasicNeeds.is_dead == true){
+            enableMove = false;
+            enableRunning = false;
+            Combat.SetActive(false);
+        }
     }
 }
