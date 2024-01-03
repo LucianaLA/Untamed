@@ -7,7 +7,8 @@ using UnityEngine.AI;
 public class EnemyController : MonoBehaviour
 {
     //enemy stats
-    public float enemy_health = 100;
+    public float enemy_health = 100f;
+    public EnemyHealthbar healthbar;
     GameObject player;
     NavMeshAgent enemy;
     Rigidbody rb;
@@ -87,7 +88,7 @@ public class EnemyController : MonoBehaviour
         if (enemy_health <= 0){
             Debug.Log("Enemy died: "+ Enemy);
             Enemy.gameObject.SetActive(false);
-            enemy_health = 100;
+            // enemy_health = 100;
         }
     }
 }
