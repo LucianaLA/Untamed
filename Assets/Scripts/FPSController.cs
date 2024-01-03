@@ -28,6 +28,8 @@ public class FPSController : MonoBehaviour
 
     public float attack_power = 10f;
     public float attack_energy = 0;
+
+    public float max_energy = 7;
     public bool energyFull = false;
     //player stats
     public float hungerCount;
@@ -117,7 +119,7 @@ public class FPSController : MonoBehaviour
     }
 
     public void EnergyManagement(){
-        if (attack_energy >= 5){
+        if (attack_energy >= max_energy){
             energyFull = true; // when 5 or more drops picked up, enables stronger attack
         }
     }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,6 +20,12 @@ public class BasicNeeds : MonoBehaviour
     //player stat bars
     public Image hunger_bar_foreground;
     public Image health_bar_foreground;
+
+    // combat energy UI
+    public Image combat_energy_fg;
+
+    public FPSController fPSController;
+    public GameObject energy_full_popup;
 
     //stat bar amounts
     public static float hunger_remaining;
@@ -83,5 +90,16 @@ public class BasicNeeds : MonoBehaviour
             background.SetActive(true);
 
         }
+
+        if(fPSController.attack_energy >= fPSController.max_energy)
+        {   
+            combat_energy_fg.fillAmount = Mathf.MoveTowards(combat_energy_fg.fillAmount, fPSController.attack_energy / fPSController.max_energy, 3*Time.deltaTime);
+            energy_full_popup.SetActive(true);
+            combat_energy_fg.rectTransform.sizeDelta = new Vector2(20+ UnityEngine.Random.Range(-1.0f, 1.0f), 20 + UnityEngine.Random.Range(-1.0f, 1.0f));
+        }
+        else{ 
+            energy_full_popup.SetActive(false);
+            combat_energy_fg.fillAmount = Mathf.MoveTowards(combat_energy_fg.fillAmount, fPSController.attack_energy / fPSController.max_energy, 3*Time.deltaTime);
+            }
     }
 }
