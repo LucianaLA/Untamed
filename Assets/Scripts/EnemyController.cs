@@ -27,6 +27,10 @@ public class EnemyController : MonoBehaviour
     [SerializeField] float sightRange, attackRange;
     bool playerInSight, playerInAttackRange;
 
+
+    //enemy animation
+    Animator animator;
+
     void Start()
     {
         //get enemy and player object
@@ -34,6 +38,8 @@ public class EnemyController : MonoBehaviour
         player = GameObject.Find("Player");
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
+        animator = GetComponent<Animator>();
+      
     }
 
     void Update()
@@ -51,6 +57,7 @@ public class EnemyController : MonoBehaviour
     void Chase()
     {
         enemy.SetDestination(player.transform.position);
+        animator.SetBool("isChasing", true);
         
     }
 
@@ -64,7 +71,10 @@ public class EnemyController : MonoBehaviour
     void Patrol()
     {
         if (!enableWalk) SetNewDest();
-        if (enableWalk) enemy.SetDestination(newDestination);
+        if (enableWalk) {
+            enemy.SetDestination(newDestination);
+            animator.SetBool("isChasing", false);
+        }
 
         //set enemy walk to false if new destination is below range
         if (Vector3.Distance(transform.position, newDestination) < 10) enableWalk = false;
