@@ -33,3 +33,5 @@ The Game Dev Cave (2022) Unity - How to make A Chasing Enemy - Available at: htt
 The Ultimate Developer (2020) LINEAR - RADIAL TIMER COUNTDOWN | Unity Tutorials C# Available at: https://www.youtube.com/watch?v=4g7YY9tLxEE (Accessed 19/10/2023)
 
 Zyger (2021) Melee Combat & Weapon System - Unity Beginner Tutorial https://www.youtube.com/watch?v=aNZw588BQBo (Accessed 23/12/2023)
+
+Tarodev (2021) HEALTHBAR in Unity - [Unity Tutorial] https://www.youtube.com/watch?v=6U_OZkFtyxY (Accessed 01/01/2024)
