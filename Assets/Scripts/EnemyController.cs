@@ -97,11 +97,16 @@ public class EnemyController : MonoBehaviour
         }
     }
 
+    IEnumerator DeathAnimation(GameObject Enemy){
+        yield return new WaitForSeconds(2f);
+        Enemy.gameObject.SetActive(false);
+    }
     public void EnemyDeath(GameObject Enemy){
         if (enemy_health <= 0){
             Debug.Log("Enemy died: "+ Enemy);
-            Enemy.gameObject.SetActive(false);
-            // enemy_health = 100;
+            Animator anim = Enemy.GetComponent<Animator>();
+            anim.SetTrigger("ghostDeath");
+            StartCoroutine(DeathAnimation(Enemy));
         }
     }
 }
