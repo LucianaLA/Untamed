@@ -57,6 +57,7 @@ public class EnemyController : MonoBehaviour
     void Chase()
     {
         enemy.SetDestination(player.transform.position);
+        animator.SetBool("isAttacking", false);
         animator.SetBool("isChasing", true);
         
     }
@@ -64,6 +65,7 @@ public class EnemyController : MonoBehaviour
     //enemy attack player function
     void Attack()
     {
+        animator.SetBool("isAttacking", true);
     }
 
     
@@ -74,6 +76,7 @@ public class EnemyController : MonoBehaviour
         if (enableWalk) {
             enemy.SetDestination(newDestination);
             animator.SetBool("isChasing", false);
+            animator.SetBool("isAttacking", false);
         }
 
         //set enemy walk to false if new destination is below range
