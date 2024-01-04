@@ -43,7 +43,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: a2a8408094edb7f44bf75edba5166130, type: 2}
+  m_Motion: {fileID: 7400000, guid: 6860b062a1c7d5d4ba297f0c23387b5a, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -55,7 +55,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Short Sword Prefab
+  m_Name: Battle Axe Prefab
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Attack
@@ -123,7 +123,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 92e8f52c2b078334ba94fc5c5bd84c24, type: 2}
+  m_Motion: {fileID: 7400000, guid: d0667020c32709345a87b1c36029c782, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
