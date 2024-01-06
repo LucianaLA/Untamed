@@ -1,11 +1,11 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 
 public class CombatController : MonoBehaviour
 {
     public GameObject[] Weapons;
+    public GameObject[] ItemDrop;
     public bool canAttack = true;
     public float attackCooldown = 1.0f;
 
