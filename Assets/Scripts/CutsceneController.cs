@@ -16,6 +16,18 @@ public class CutsceneController : MonoBehaviour
     public GameObject dialogue2;
     public GameObject dialogue3;
 
+    [SerializeField]
+    AudioSource audio;
+
+
+    void Update()
+    {
+        if (neighbour.activeSelf)
+        {
+            audio.Stop();
+        }
+    }
+
     //change to second scene
     public void SecondScene()
     {
