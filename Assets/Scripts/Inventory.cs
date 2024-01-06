@@ -15,6 +15,7 @@ public class Inventory : MonoBehaviour
     [Header("Raycase")]
     public float raycastDistance = 5f;
     public LayerMask itemLayer;
+    public Transform dropLocation;
 
     [Header("Drag and Drop")]
     public Image dragIconImage;
@@ -44,6 +45,11 @@ public class Inventory : MonoBehaviour
         else if (currentDragSlotIndex != -1 && Input.GetMouseButtonUp(0) || currentDragSlotIndex != 1 && !inventory.activeInHierarchy)
         {
             dropInventoryIcon();
+        }
+
+        if(Input.GetKeyDown(KeyCode.Q))
+        {
+            dropItem();
         }
 
         dragIconImage.transform.position = Input.mousePosition;
@@ -136,6 +142,22 @@ public class Inventory : MonoBehaviour
 
         ////diable the rotation of the camera
         //Camera.main.GetComponent<FPSController>().sensitivity = enable ? 0 : 2;
+    }
+
+    private void dropItem()
+    {
+        for(int i = 0; i < InventorySlots.Count;i++)
+        {
+            Slot curSlot = InventorySlots[i];
+            if(curSlot.hovered && curSlot.hasItem())
+            {
+                curSlot.getItem().gameObject.SetActive(true);
+
+                curSlot.getItem().transform.position = dropLocation.position;
+                curSlot.setItem(null);
+                break;
+            }
+        }
     }
 
     private void dragInventoryIcon()
