@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.AI;
@@ -19,7 +18,7 @@ public class EnemyController : MonoBehaviour
     //set new destination for patrol
     Vector3 newDestination;
 
-    //
+    public CombatController combatController;
     public static bool enableWalk;
     [SerializeField] float range;
 
@@ -98,8 +97,22 @@ public class EnemyController : MonoBehaviour
     }
 
     IEnumerator DeathAnimation(GameObject Enemy){
+        Debug.Log("code runs coroutine.");
         yield return new WaitForSeconds(2f);
+        DropItem(Enemy);
         Enemy.gameObject.SetActive(false);
+        Debug.Log("code runs death.");
+    }
+
+    public void DropItem(GameObject Enemy){
+        int i = Random.Range(0,3);
+        Debug.Log("i is "+i);
+        //drop item
+        Instantiate(combatController.ItemDrop[i], new Vector3(Enemy.transform.position.x + Random.Range(-1.0f, 1.0f),
+                                                    transform.position.y, Enemy.transform.position.z + Random.Range(-1.0f, 1.0f)),
+                                                    Enemy.transform.rotation);
+        Debug.Log(combatController.ItemDrop[i]+" item has been dropped.");
+        combatController.ItemDrop[i].gameObject.SetActive(true);
     }
     public void EnemyDeath(GameObject Enemy){
         if (enemy_health <= 0){
