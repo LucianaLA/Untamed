@@ -49,4 +49,10 @@ public class CutsceneController : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(2);
     }
+
+    //back to menu
+    public void MainMenu()
+    {
+        SceneManager.LoadSceneAsync(0);
+    }
 }
