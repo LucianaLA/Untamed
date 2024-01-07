@@ -3979,7 +3979,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6342632843698898676, guid: 272bdef0631c26a42b8174b6881ba615, type: 3}
       propertyPath: m_Name
-      value: Small Axe
+      value: Throwing Axe
       objectReference: {fileID: 0}
     - target: {fileID: 6342632843698898676, guid: 272bdef0631c26a42b8174b6881ba615, type: 3}
       propertyPath: m_Layer
@@ -8889,7 +8889,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6428144754400928712, guid: 08685037f1f2fbf42a2c0ec91d066a8d, type: 3}
       propertyPath: m_Name
-      value: Axe
+      value: Battle Axe
       objectReference: {fileID: 0}
     - target: {fileID: 6428144754400928712, guid: 08685037f1f2fbf42a2c0ec91d066a8d, type: 3}
       propertyPath: m_Layer
