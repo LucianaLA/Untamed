@@ -24,7 +24,7 @@ public class Weapon : MonoBehaviour
     {
 
         // Adjust is_enabled based on specific conditions
-        if (weaponGameObject.name == "Short Sword")
+        if (weaponGameObject.name != "Short Sword")
         {
             is_enabled = true;
             base_attack = 8;
