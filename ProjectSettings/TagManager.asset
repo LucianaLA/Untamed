@@ -7,6 +7,8 @@ TagManager:
   - PickUp
   - Enemy
   - EnemyDrop
+  - Weapon
+  - Item
   layers:
   - Default
   - TransparentFX

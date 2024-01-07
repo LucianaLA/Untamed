@@ -1,14 +1,15 @@
 using System.Collections;
 using UnityEngine;
-
+using System.Collections.Generic;
 
 public class CombatController : MonoBehaviour
 {
-    public GameObject[] Weapons;
+    public Weapon[] Weapons;
     public GameObject[] ItemDrop;
     public bool canAttack = true;
     public float attackCooldown = 1.0f;
 
+    // private Weapon weapon;
     private GameObject activeWeapon;
     public bool isAttacking = false;
     public bool canSpawn = true; //checks if new enemy drop can be spawned
@@ -16,8 +17,10 @@ public class CombatController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        PopulateWeaponArray();
+        SetAllWeaponsActive(false);
         // Find the first active child and set it as the Weapon
-        SetActiveWeapon(0);
+        SetActiveWeapon(2);
     }
 
     // Update is called once per frame
@@ -29,7 +32,7 @@ public class CombatController : MonoBehaviour
             {
                 NormalAttack();
             }
-        }
+        }   
 
         // Check if key 1 is pressed and activate the first child
         if (Input.GetKeyDown(KeyCode.Alpha1))
@@ -52,20 +55,51 @@ public class CombatController : MonoBehaviour
         }
     }
 
-    void SetActiveWeapon(int activeIndex)
+    void PopulateWeaponArray()
     {
-        for (int i = 0; i < Weapons.Length; i++)
+        GameObject[] weaponObjects = GameObject.FindGameObjectsWithTag("Weapon");
+
+        // Filter objects that have the Weapon component
+        List<Weapon> validWeapons = new List<Weapon>();
+        foreach (GameObject weaponObject in weaponObjects)
         {
-            if (i == activeIndex)
+            Weapon weaponComponent = weaponObject.GetComponent<Weapon>();
+            if (weaponComponent != null)
             {
-                Weapons[i].SetActive(true);
-                activeWeapon = Weapons[i];  // Set the active weapon
-            }
-            else
-            {
-                Weapons[i].SetActive(false);
+                validWeapons.Add(weaponComponent);
             }
         }
+
+        // Convert the list to an array
+        Weapons = validWeapons.ToArray();
+    }
+
+    void SetAllWeaponsActive(bool isActive)
+    {
+        foreach (Weapon weapon in Weapons)
+        {
+            weapon.weaponGameObject.SetActive(isActive);
+        }
+    }
+void SetActiveWeapon(int activeIndex)
+{
+    if (activeIndex >= 0 && activeIndex < Weapons.Length)
+    {
+        Weapon selectedWeapon = Weapons[activeIndex];
+
+        // Check if the selected weapon is enabled
+        if (selectedWeapon.is_enabled)
+        {
+            activeWeapon = selectedWeapon.weaponGameObject;  // Set the active weapon
+            SetAllWeaponsActive(false); // Deactivate all weapons
+            activeWeapon.SetActive(true); // Activate the selected weapon
+        }
+    }
+}
+
+    public GameObject GetActiveWeapon()
+    {
+        return activeWeapon;
     }
 
     public void NormalAttack()

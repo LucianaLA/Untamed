@@ -26,10 +26,7 @@ public class CollisionDetection : MonoBehaviour
 
         if (other.tag == "Enemy" && combatController.isAttacking)
         {
-            //animation
-            // other.GetComponent<Animator>().SetTrigger("Hit");
-            // Debug.Log("hit"+ other.name);
-            // Debug.Log("can spawn?" + combatController.canSpawn);
+            //spawn drops when enemy is hit to fill energy
             if (combatController.canSpawn)
             {
                 Instantiate(EnemyDrop, new Vector3(other.transform.position.x + Random.Range(-1.0f, 1.0f),
@@ -44,11 +41,11 @@ public class CollisionDetection : MonoBehaviour
                 if (fPSController.energyFull)
                 {
                     Debug.Log("strong attack used");
-                    EnemyControllerScript.enemy_health -= fPSController.attack_power * 2; //stronger attack if energy full
+                    EnemyControllerScript.enemy_health -= getWeaponObject().base_attack * 2; //stronger attack if energy full
                     fPSController.energyFull = false;
                     fPSController.attack_energy = 0; //reset energy after used up
                 }
-                else { EnemyControllerScript.enemy_health -= fPSController.attack_power; }
+                else { EnemyControllerScript.enemy_health -= getWeaponObject().base_attack; }
 
                 Debug.Log("maxhealth: "+ maxHealth+", currentH: "+EnemyControllerScript.enemy_health);
                 healthbar = EnemyControllerScript.healthbar;
@@ -58,6 +55,18 @@ public class CollisionDetection : MonoBehaviour
                 Debug.Log("Enemy health= "+EnemyControllerScript.enemy_health);
             }
         }
+    }
+
+    public Weapon getWeaponObject()
+    {
+        foreach (Weapon weapon in combatController.Weapons)
+        {
+            if (combatController.GetActiveWeapon().name == weapon.name)
+            {
+                return weapon;
+            }
+        }
+        return null;
     }
 
 

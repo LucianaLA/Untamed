@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEditorInternal.Profiling.Memory.Experimental;
 
 public class Inventory : MonoBehaviour
 {
@@ -20,7 +21,11 @@ public class Inventory : MonoBehaviour
     [Header("Drag and Drop")]
     public Image dragIconImage;
     private Item currentDraggedItem;
+    [SerializeField] Item shortsword;
     private int currentDragSlotIndex = -1;
+
+    [SerializeField] CombatController combatController;
+    private Weapon weapon;
 
     public void Start()
     {
@@ -29,6 +34,7 @@ public class Inventory : MonoBehaviour
         {
             uiSlot.initialiseSlot();
         }
+        addItemToInventory(shortsword);
     }
 
     public void Update()
@@ -46,15 +52,69 @@ public class Inventory : MonoBehaviour
         {
             dropInventoryIcon();
         }
-
-        if(Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             dropItem();
         }
 
+        // check if item is in inventory when active
+        if (Input.GetKeyDown(KeyCode.F) && inventory.activeInHierarchy)
+        {
+            // Check if an item with the name "YourItemName" is in the inventory
+            Item weaponItem = IsItemInInventory(combatController.GetActiveWeapon());
+            Debug.Log("active weapon: " + combatController.GetActiveWeapon());
+
+            if (weaponItem)
+            {
+                //check and do enhancement if possible
+                EnhanceItem(weaponItem);
+                
+            }
+        } //end of enhancement
+
         dragIconImage.transform.position = Input.mousePosition;
 
     }
+
+    public void EnhanceItem(Item weaponItem)
+    {
+        int totalQuantity = 0;
+        
+
+        // Iterate through all inventory slots and accumulate the quantity of the specified item
+        foreach (Slot slot in InventorySlots)
+        {
+            Item item = slot.getItem();
+            if (item != null && item.name == weaponItem.name)
+            {
+                totalQuantity += item.currentQuantity;
+
+            }
+        }
+        if (totalQuantity > 1)
+        {
+            // Increase enhancement level by 1
+            
+            Debug.Log("Enhancing item: " + weaponItem.name + ", new quantity: " + weaponItem.currentQuantity);
+
+            foreach (Weapon weapon in combatController.Weapons)
+            {
+                if (weaponItem.name == weapon.name)
+                {
+                    weapon.enhancementLevel += 1;
+                    weapon.base_attack = weapon.enhancementLevel * weapon.base_attack;
+                    dropItem();
+                    Destroy(weaponItem.gameObject);
+                }
+            }
+        }
+        else
+        {
+            // There is only 1 item, enhancement is not allowed
+            Debug.Log("Cannot enhance. Only 1 item available.");
+        }
+    }
+
 
     public void itemRaycast(bool hasClicked = false)
     {
@@ -72,6 +132,7 @@ public class Inventory : MonoBehaviour
                     if (newItem)
                     {
                         addItemToInventory(newItem);
+                        EnableWeapon(newItem);
                     }
                 }
                 else
@@ -146,10 +207,10 @@ public class Inventory : MonoBehaviour
 
     private void dropItem()
     {
-        for(int i = 0; i < InventorySlots.Count;i++)
+        for (int i = 0; i < InventorySlots.Count; i++)
         {
             Slot curSlot = InventorySlots[i];
-            if(curSlot.hovered && curSlot.hasItem())
+            if (curSlot.hovered && curSlot.hasItem())
             {
                 curSlot.getItem().gameObject.SetActive(true);
 
@@ -181,7 +242,7 @@ public class Inventory : MonoBehaviour
     private void dropInventoryIcon()
     {
         dragIconImage.sprite = null;
-        dragIconImage.color = new Color(1, 1, 1, 1);
+        dragIconImage.color = new Color(1, 1, 1, 0);
         for (int i = 0; i < InventorySlots.Count; i++)
         {
             Slot curSlot = InventorySlots[i];
@@ -217,4 +278,37 @@ public class Inventory : MonoBehaviour
         currentDraggedItem = null;
         currentDragSlotIndex = -1;
     }
+
+
+    //weapon usage/combat related functions
+    public Item IsItemInInventory(GameObject itemName)
+    {
+        foreach (Slot slot in InventorySlots)
+        {
+            Item item = slot.getItem();
+            // Debug.Log("inventory item "+item.name);
+
+            if (item != null && item.name == itemName.name)
+            {
+                // Debug.Log("inventory item " + item.name);
+                return item;
+            }
+        }
+
+        return null;
+    }
+
+    public void EnableWeapon(Item item)
+    {
+        foreach (Weapon weapon in combatController.Weapons)
+        {
+            Debug.Log("code runs enableweapon");
+            if (item.name == weapon.name)
+            {
+                weapon.is_enabled = true;
+            }
+        }
+    }
 }
+
+

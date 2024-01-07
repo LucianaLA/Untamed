@@ -106,13 +106,13 @@ public class EnemyController : MonoBehaviour
 
     public void DropItem(GameObject Enemy){
         int i = Random.Range(0,3);
-        Debug.Log("i is "+i);
         //drop item
-        Instantiate(combatController.ItemDrop[i], new Vector3(Enemy.transform.position.x + Random.Range(-1.0f, 1.0f),
+        GameObject droppedItem = Instantiate(combatController.ItemDrop[i], new Vector3(Enemy.transform.position.x + Random.Range(-1.0f, 1.0f),
                                                     transform.position.y, Enemy.transform.position.z + Random.Range(-1.0f, 1.0f)),
                                                     Enemy.transform.rotation);
-        Debug.Log(combatController.ItemDrop[i]+" item has been dropped.");
-        combatController.ItemDrop[i].gameObject.SetActive(true);
+        Debug.Log(droppedItem+" item has been dropped.");
+        
+        droppedItem.SetActive(true);
     }
     public void EnemyDeath(GameObject Enemy){
         if (enemy_health <= 0){
