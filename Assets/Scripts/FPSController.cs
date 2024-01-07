@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
- 
+
 [RequireComponent(typeof(CharacterController))]
 public class FPSController : MonoBehaviour
 {
@@ -36,27 +36,31 @@ public class FPSController : MonoBehaviour
     public float healthCount;
 
 
+    //settings UI
+    public GameObject settings;
+
+
     void Start()
     {
         characterController = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
- 
+
     void Update()
     {
- 
+
         //player movement
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
- 
+
         //player run (shift)
         enableRunning = Input.GetKey(KeyCode.LeftShift);
         float cursorXSpeed = enableMove ? (enableRunning ? runSpeed : walkSpeed) * Input.GetAxis("Vertical") : 0;
         float cursorYSpeed = enableMove ? (enableRunning ? runSpeed : walkSpeed) * Input.GetAxis("Horizontal") : 0;
         float movementDirectionY = moveDirection.y;
         moveDirection = (forward * cursorXSpeed) + (right * cursorYSpeed);
- 
+
         //player jump
         if (Input.GetButton("Jump") && enableMove && characterController.isGrounded)
         {
@@ -66,16 +70,16 @@ public class FPSController : MonoBehaviour
         {
             moveDirection.y = movementDirectionY;
         }
- 
+
         if (!characterController.isGrounded)
         {
             moveDirection.y -= gravity * Time.deltaTime;
         }
 
- 
+
         //camera view rotation
         characterController.Move(moveDirection * Time.deltaTime);
- 
+
         if (enableMove)
         {
             rotationX += -Input.GetAxis("Mouse Y") * rotationSpeed;
@@ -87,13 +91,21 @@ public class FPSController : MonoBehaviour
         EnergyManagement();
     }
 
+    void FixedUpdate()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            triggerPause();
+        }
+    }
 
     //colliding with enemy
     void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Enemy") {
-           BasicNeeds.health_remaining -= healthCount;
-           Debug.Log("Damage taken");
+        if (collision.gameObject.tag == "Enemy")
+        {
+            BasicNeeds.health_remaining -= healthCount;
+            Debug.Log("Damage taken");
         }
     }
 
@@ -103,32 +115,50 @@ public class FPSController : MonoBehaviour
         other.gameObject.SetActive(true);
     }
     //colliding with pickups
-    void OnTriggerEnter(Collider other) {
-        if(other.gameObject.tag == "PickUp") {
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "PickUp")
+        {
             other.gameObject.SetActive(false);
             BasicNeeds.hunger_remaining += hungerCount;
             Debug.Log("Hunger increased");
             //set respawn time
             StartCoroutine(Respawn(other, 25));
         }
-         if (other.gameObject.tag == "EnemyDrop"){
+        if (other.gameObject.tag == "EnemyDrop")
+        {
             other.gameObject.SetActive(false);
             attack_energy += 1; //increase energy via picking up drops
             Debug.Log("Pickup enemy drop");
         }
     }
 
-    public void EnergyManagement(){
-        if (attack_energy >= max_energy){
+    public void EnergyManagement()
+    {
+        if (attack_energy >= max_energy)
+        {
             energyFull = true; // when 5 or more drops picked up, enables stronger attack
         }
     }
 
-    public void GameOverCheck(){
-        if (BasicNeeds.win_check == true || BasicNeeds.is_dead == true){
+    public void GameOverCheck()
+    {
+        if (BasicNeeds.win_check == true || BasicNeeds.is_dead == true)
+        {
             enableMove = false;
             enableRunning = false;
             Combat.SetActive(false);
         }
     }
+
+    //trigger pause and show settings
+    void triggerPause()
+    {
+        enableMove = false;
+        Time.timeScale = 0f;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        settings.SetActive(true);
+    }
+
 }
