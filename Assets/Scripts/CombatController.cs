@@ -107,7 +107,7 @@ void SetActiveWeapon(int activeIndex)
         isAttacking = true;
         // cannot attack while attacking
         canAttack = false;
-        
+
         canSpawn = false;
         // adding animations 
         Animator anim = activeWeapon.GetComponent<Animator>();

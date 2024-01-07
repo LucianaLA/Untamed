@@ -22,12 +22,12 @@ public class Weapon : MonoBehaviour
     }
     private void Default()
     {
-        is_enabled = false; // Enable the weapon by default
+        is_enabled = true; // Enable the weapon by default
 
         // Adjust is_enabled based on specific conditions
-        if (weaponGameObject.name == "Short Sword")
+        if (weaponGameObject.name != "Short Sword")
         {
-            is_enabled = true;
+            is_enabled = false;
         }
     }
 }
