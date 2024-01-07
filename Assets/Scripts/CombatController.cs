@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using System.Collections.Generic;
+using System.Linq;
 
 public class CombatController : MonoBehaviour
 {
@@ -20,7 +21,7 @@ public class CombatController : MonoBehaviour
         PopulateWeaponArray();
         SetAllWeaponsActive(false);
         // Find the first active child and set it as the Weapon
-        SetActiveWeapon(2);
+        SetActiveWeapon(0);
     }
 
     // Update is called once per frame
@@ -66,6 +67,7 @@ public class CombatController : MonoBehaviour
             Weapon weaponComponent = weaponObject.GetComponent<Weapon>();
             if (weaponComponent != null)
             {
+                validWeapons = validWeapons.OrderBy(weapon => weapon.name).ToList();
                 validWeapons.Add(weaponComponent);
             }
         }
@@ -107,7 +109,7 @@ void SetActiveWeapon(int activeIndex)
         isAttacking = true;
         // cannot attack while attacking
         canAttack = false;
-        
+
         canSpawn = false;
         // adding animations 
         Animator anim = activeWeapon.GetComponent<Animator>();
