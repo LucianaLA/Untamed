@@ -63,6 +63,7 @@ public class LevelController : MonoBehaviour
         {
             enablePopup = true;
             ShowPopup();
+            SpawnPortal();
         }
     }
 
@@ -86,7 +87,6 @@ public class LevelController : MonoBehaviour
         FPSController.enableMove = true;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        SpawnPortal();
     }
 
     //spawn portal in front of player
