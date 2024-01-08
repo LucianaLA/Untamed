@@ -30,8 +30,8 @@ public class BasicNeeds : MonoBehaviour
     //stat bar amounts
     public static float hunger_remaining;
     public static float health_remaining;
-    public float hunger_max = 60.0f;
-    public float health_max = 60.0f;
+    public float hunger_max = 300.0f;
+    public float health_max = 300.0f;
 
     //checkers
     public static bool is_dead = false;
@@ -83,13 +83,13 @@ public class BasicNeeds : MonoBehaviour
             background.SetActive(true);
         }
         //win after certain time if health and hunger are not depleated
-        if(hunger_remaining > 0 && health_remaining > 0 && time_count >= 60.0f){
-            win_check = true;
-            EnemyController.enableWalk = false;
-            win_popup.SetActive(true);
-            background.SetActive(true);
+        // if(hunger_remaining > 0 && health_remaining > 0 && time_count >= 60.0f){
+        //     win_check = true;
+        //     EnemyController.enableWalk = false;
+        //     win_popup.SetActive(true);
+        //     background.SetActive(true);
 
-        }
+        // }
 
         if(fPSController.attack_energy >= fPSController.max_energy)
         {   

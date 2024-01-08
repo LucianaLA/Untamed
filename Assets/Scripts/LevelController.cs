@@ -34,7 +34,7 @@ public class LevelController : MonoBehaviour
 
         //get current scene
         Scene scene = SceneManager.GetActiveScene();
-        if (scene.name == "NS-Test")
+        if (scene.name == "Level 1")
         {
             killCondition = 1;
         }
