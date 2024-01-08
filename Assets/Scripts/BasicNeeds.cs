@@ -30,20 +30,22 @@ public class BasicNeeds : MonoBehaviour
     //stat bar amounts
     public static float hunger_remaining;
     public static float health_remaining;
-    public float hunger_max = 300.0f;
-    public float health_max = 300.0f;
+    public float hunger_max;
+    public float health_max;
 
     //checkers
     public static bool is_dead = false;
     public static bool win_check = false;
 
     //time win condition counter
-    public float time_count = 0f;
+    public float time_count = 100f;
     
     
     // Start is called before the first frame update
     void Start()
     {
+        hunger_max = 200f;
+        health_max = 300f;
         hunger_remaining = hunger_max;
         health_remaining = health_max;
     }
