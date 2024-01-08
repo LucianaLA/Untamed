@@ -30,6 +30,9 @@ public class EnemyController : MonoBehaviour
     //enemy animation
     Animator animator;
 
+    //enemy kill counter
+    public LevelController levelController;
+
     void Start()
     {
         //get enemy and player object
@@ -38,6 +41,7 @@ public class EnemyController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
         animator = GetComponent<Animator>();
+        levelController = GameObject.Find("LevelController").GetComponent<LevelController>();
       
     }
 
@@ -49,6 +53,8 @@ public class EnemyController : MonoBehaviour
         if (!playerInSight && !playerInAttackRange) Patrol();
         if (playerInSight && !playerInAttackRange) Chase();
         if (playerInSight && playerInAttackRange) Attack();
+
+        
     }
 
 
@@ -101,6 +107,8 @@ public class EnemyController : MonoBehaviour
         yield return new WaitForSeconds(2f);
         DropItem(Enemy);
         Enemy.gameObject.SetActive(false);
+        levelController.counterKill++;
+        // Debug.Log("Enemies killed:" + levelController.counterKill);
         Debug.Log("code runs death.");
     }
 
