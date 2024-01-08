@@ -13,7 +13,7 @@ public class Weapon : MonoBehaviour
 
     public void Start()
     {
-        is_enabled = false;
+        // is_enabled = false;
         Default();
     }
 
@@ -21,11 +21,12 @@ public class Weapon : MonoBehaviour
     {
 
     }
+
     public void Default()
     {
 
         // Adjust is_enabled based on specific conditions
-        if (weaponGameObject.name != "Short Sword")
+        if (weaponGameObject.name == "Short Sword")
         {
             is_enabled = true;
             base_attack = 8;
