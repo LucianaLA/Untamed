@@ -104,6 +104,15 @@ void SetActiveWeapon(int activeIndex)
         return activeWeapon;
     }
 
+    public int GetShortSwordArray(){
+        int arrIndex;
+        foreach (Weapon weapon in Weapons)
+        {
+            ;
+        }
+        return arrIndex;
+    }
+
     public void NormalAttack()
     {
         isAttacking = true;

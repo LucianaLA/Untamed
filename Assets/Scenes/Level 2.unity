@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7208,8 +7208,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   combatController: {fileID: 1390185737}
-  EnemyDrop: {fileID: 0}
-  fPSController: {fileID: 0}
+  EnemyDrop: {fileID: 1788622653}
+  fPSController: {fileID: 1856258182}
   EnemyControllerScript: {fileID: 0}
   healthbar: {fileID: 0}
 --- !u!95 &282958550
@@ -20651,8 +20651,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   combatController: {fileID: 1390185737}
-  EnemyDrop: {fileID: 0}
-  fPSController: {fileID: 0}
+  EnemyDrop: {fileID: 1788622653}
+  fPSController: {fileID: 1856258182}
   EnemyControllerScript: {fileID: 0}
   healthbar: {fileID: 0}
 --- !u!95 &734273906
@@ -33939,27 +33939,111 @@ PrefabInstance:
     - target: {fileID: 6977986033280845565, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
       propertyPath: crosshair
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 913692573}
     - target: {fileID: 6977986033280845565, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
       propertyPath: inventory
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 295045445}
     - target: {fileID: 6977986033280845565, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
       propertyPath: shortsword
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 886336274}
     - target: {fileID: 6977986033280845565, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
       propertyPath: dragIconImage
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1509855143}
     - target: {fileID: 6977986033280845565, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
       propertyPath: itemHoverText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1885874471}
     - target: {fileID: 6977986033280845565, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
       propertyPath: combatController
       value: 
       objectReference: {fileID: 1390185737}
+    - target: {fileID: 6977986033280845565, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
+      propertyPath: 'InventorySlots.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1191978846}
+    - target: {fileID: 6977986033280845565, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
+      propertyPath: 'InventorySlots.Array.data[1]'
+      value: 
+      objectReference: {fileID: 697448706}
+    - target: {fileID: 6977986033280845565, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
+      propertyPath: 'InventorySlots.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1346134073}
+    - target: {fileID: 6977986033280845565, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
+      propertyPath: 'InventorySlots.Array.data[3]'
+      value: 
+      objectReference: {fileID: 137189813}
+    - target: {fileID: 6977986033280845565, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
+      propertyPath: 'InventorySlots.Array.data[4]'
+      value: 
+      objectReference: {fileID: 1223933501}
+    - target: {fileID: 6977986033280845565, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
+      propertyPath: 'InventorySlots.Array.data[5]'
+      value: 
+      objectReference: {fileID: 1084600162}
+    - target: {fileID: 6977986033280845565, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
+      propertyPath: 'InventorySlots.Array.data[6]'
+      value: 
+      objectReference: {fileID: 815435584}
+    - target: {fileID: 6977986033280845565, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
+      propertyPath: 'InventorySlots.Array.data[7]'
+      value: 
+      objectReference: {fileID: 326289903}
+    - target: {fileID: 6977986033280845565, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
+      propertyPath: 'InventorySlots.Array.data[8]'
+      value: 
+      objectReference: {fileID: 534335737}
+    - target: {fileID: 6977986033280845565, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
+      propertyPath: 'InventorySlots.Array.data[9]'
+      value: 
+      objectReference: {fileID: 1628462655}
+    - target: {fileID: 6977986033280845565, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
+      propertyPath: 'InventorySlots.Array.data[10]'
+      value: 
+      objectReference: {fileID: 279292276}
+    - target: {fileID: 6977986033280845565, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
+      propertyPath: 'InventorySlots.Array.data[11]'
+      value: 
+      objectReference: {fileID: 1387440520}
+    - target: {fileID: 6977986033280845565, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
+      propertyPath: 'InventorySlots.Array.data[12]'
+      value: 
+      objectReference: {fileID: 1186480251}
+    - target: {fileID: 6977986033280845565, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
+      propertyPath: 'InventorySlots.Array.data[13]'
+      value: 
+      objectReference: {fileID: 839235326}
+    - target: {fileID: 6977986033280845565, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
+      propertyPath: 'InventorySlots.Array.data[14]'
+      value: 
+      objectReference: {fileID: 1675266682}
+    - target: {fileID: 6977986033280845565, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
+      propertyPath: 'InventorySlots.Array.data[15]'
+      value: 
+      objectReference: {fileID: 41921981}
+    - target: {fileID: 6977986033280845565, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
+      propertyPath: 'InventorySlots.Array.data[16]'
+      value: 
+      objectReference: {fileID: 78509733}
+    - target: {fileID: 6977986033280845565, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
+      propertyPath: 'InventorySlots.Array.data[17]'
+      value: 
+      objectReference: {fileID: 677046794}
+    - target: {fileID: 6977986033280845565, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
+      propertyPath: 'InventorySlots.Array.data[18]'
+      value: 
+      objectReference: {fileID: 1967244609}
+    - target: {fileID: 6977986033280845565, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
+      propertyPath: 'InventorySlots.Array.data[19]'
+      value: 
+      objectReference: {fileID: 1297912853}
+    - target: {fileID: 6977986033280845565, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
+      propertyPath: 'InventorySlots.Array.data[20]'
+      value: 
+      objectReference: {fileID: 1582115117}
     - target: {fileID: 7319237524606335910, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 925.9
@@ -44865,10 +44949,10 @@ MonoBehaviour:
   - {fileID: 1555134499}
   - {fileID: 734273900}
   ItemDrop:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 579857990}
+  - {fileID: 1793192530}
+  - {fileID: 886336272}
+  - {fileID: 1401998139}
   canAttack: 1
   attackCooldown: 1
   isAttacking: 0
@@ -45664,8 +45748,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   combatController: {fileID: 1390185737}
-  EnemyDrop: {fileID: 0}
-  fPSController: {fileID: 0}
+  EnemyDrop: {fileID: 1788622653}
+  fPSController: {fileID: 1856258182}
   EnemyControllerScript: {fileID: 0}
   healthbar: {fileID: 0}
 --- !u!95 &1458896297
@@ -46689,8 +46773,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   combatController: {fileID: 1390185737}
-  EnemyDrop: {fileID: 0}
-  fPSController: {fileID: 0}
+  EnemyDrop: {fileID: 1788622653}
+  fPSController: {fileID: 1856258182}
   EnemyControllerScript: {fileID: 0}
   healthbar: {fileID: 0}
 --- !u!95 &1555134493

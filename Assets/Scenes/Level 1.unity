@@ -5135,10 +5135,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   combatController: {fileID: 637032992}
-  EnemyDrop: {fileID: 0}
-  fPSController: {fileID: 0}
-  EnemyControllerScript: {fileID: 0}
-  healthbar: {fileID: 0}
+  EnemyDrop: {fileID: 1788622653}
+  fPSController: {fileID: 357776101}
+  EnemyControllerScript: {fileID: 1539490657}
+  healthbar: {fileID: 2046750193}
 --- !u!95 &199331937
 Animator:
   serializedVersion: 7
@@ -8138,10 +8138,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   combatController: {fileID: 637032992}
-  EnemyDrop: {fileID: 0}
-  fPSController: {fileID: 0}
-  EnemyControllerScript: {fileID: 0}
-  healthbar: {fileID: 0}
+  EnemyDrop: {fileID: 1788622653}
+  fPSController: {fileID: 357776101}
+  EnemyControllerScript: {fileID: 1539490657}
+  healthbar: {fileID: 2046750193}
 --- !u!95 &344587153
 Animator:
   serializedVersion: 7
@@ -37239,10 +37239,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   combatController: {fileID: 637032992}
-  EnemyDrop: {fileID: 0}
-  fPSController: {fileID: 0}
-  EnemyControllerScript: {fileID: 0}
-  healthbar: {fileID: 0}
+  EnemyDrop: {fileID: 1788622653}
+  fPSController: {fileID: 357776101}
+  EnemyControllerScript: {fileID: 1539490657}
+  healthbar: {fileID: 2046750193}
 --- !u!95 &1314907111
 Animator:
   serializedVersion: 7
