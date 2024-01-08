@@ -13,6 +13,7 @@ public class Weapon : MonoBehaviour
 
     public void Start()
     {
+        is_enabled = false;
         Default();
     }
 
@@ -28,6 +29,7 @@ public class Weapon : MonoBehaviour
         {
             is_enabled = true;
             base_attack = 8;
+            Debug.Log("sword enabled");
         }
 
         if(weaponGameObject.name == "Sword")
