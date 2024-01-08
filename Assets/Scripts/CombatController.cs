@@ -21,7 +21,7 @@ public class CombatController : MonoBehaviour
         PopulateWeaponArray();
         SetAllWeaponsActive(false);
         // Find the first active child and set it as the Weapon
-        SetActiveWeapon(0);
+        ShortSwordActive();
     }
 
     // Update is called once per frame
@@ -104,13 +104,16 @@ void SetActiveWeapon(int activeIndex)
         return activeWeapon;
     }
 
-    public int GetShortSwordArray(){
-        int arrIndex;
+    public void ShortSwordActive(){
         foreach (Weapon weapon in Weapons)
         {
-            ;
+            // Debug.Log(weapon.name);
+            if (weapon.name == "Short Sword"){
+                Debug.Log("runs");
+                weapon.weaponGameObject.SetActive(true);
+                activeWeapon = weapon.gameObject;
+                }
         }
-        return arrIndex;
     }
 
     public void NormalAttack()
