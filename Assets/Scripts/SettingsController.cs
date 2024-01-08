@@ -78,7 +78,7 @@ public class SettingsController : MonoBehaviour
     //default difficulty
     public void UpdateToDifficulty1()
     {
-        GetEnemies(100);
+        GetEnemies(1);
         // weapon attack
         GetWeaponObj().Default();
         //player health
@@ -88,7 +88,7 @@ public class SettingsController : MonoBehaviour
     }
     public void UpdateToDifficulty2()
     {
-        GetEnemies(200);
+        GetEnemies(2);
         // weapon attack
         GetWeapons(3);
         //player health
@@ -97,7 +97,7 @@ public class SettingsController : MonoBehaviour
     }
     public void UpdateToDifficulty3()
     {
-        GetEnemies(300);
+        GetEnemies(3);
         // weapon attack
         GetWeapons(2);
         //player health
@@ -133,7 +133,30 @@ public class SettingsController : MonoBehaviour
         {
             EnemyController enemyController = enemyObject.GetComponent<EnemyController>();
             //enemy health
-            enemyController.enemy_health = health;
+            float max_health = enemyController.enemy_maxhealth;
+            float current_health = enemyController.enemy_health;
+            if (health == 3){
+                if (max_health == 200){
+                    enemyController.enemy_health = 3 * current_health / 2;
+                }
+                else if (max_health == 100){enemyController.enemy_health = 3 * current_health;}
+                enemyController.enemy_maxhealth = 300;
+            } else if (health == 1){
+                if (max_health == 200){
+                    enemyController.enemy_health = current_health/2;
+                }
+                else if (max_health == 300) {enemyController.enemy_health = current_health/3;}
+                enemyController.enemy_maxhealth = 100;
+            } else if (health == 2){
+                if (max_health == 300){
+                    enemyController.enemy_health = 2*current_health/3;
+                }
+                else if (max_health == 100){enemyController.enemy_health = current_health*2;}
+                enemyController.enemy_maxhealth = 200;
+            } else if (health * 10 == max_health){
+                Debug.Log("stop");
+            }
+
             Debug.Log("enemy health: " + enemyController.enemy_health);
         }
     }
