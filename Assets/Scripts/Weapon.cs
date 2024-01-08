@@ -6,7 +6,7 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     public bool is_enabled = false;
-    public float base_attack = 10;
+    public float base_attack;
     public GameObject weaponGameObject;
 
     public int enhancementLevel = 1;
@@ -20,14 +20,27 @@ public class Weapon : MonoBehaviour
     {
 
     }
-    private void Default()
+    public void Default()
     {
-        is_enabled = true; // Enable the weapon by default
 
         // Adjust is_enabled based on specific conditions
         if (weaponGameObject.name != "Short Sword")
         {
-            is_enabled = false;
+            is_enabled = true;
+            base_attack = 8;
+        }
+
+        if(weaponGameObject.name == "Sword")
+        {
+            base_attack = 10;
+        }
+        if(weaponGameObject.name == "Battle Axe")
+        {
+            base_attack = 15;
+        }
+        if(weaponGameObject.name == "Throwing Axe")
+        {
+            base_attack = 5;
         }
     }
 }

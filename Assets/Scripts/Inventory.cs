@@ -269,8 +269,8 @@ public class Inventory : MonoBehaviour
                 }
             }
         }
-
-        InventorySlots[currentDragSlotIndex].setItem(currentDraggedItem);
+        if (inventory.activeInHierarchy){
+        InventorySlots[currentDragSlotIndex].setItem(currentDraggedItem);}
         resetDragVariables();
     }
 

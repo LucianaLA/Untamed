@@ -5,13 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class GameLoader : MonoBehaviour
 {
-    public string sceneName;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(sceneName);
+            //get current scene
+            Scene scene = SceneManager.GetActiveScene();
+            if (scene.name == "NS-Test")
+            {
+                SceneManager.LoadSceneAsync("EndCutscene");
+            }
+            
         }
     }
 }
