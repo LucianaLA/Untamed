@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -17926,7 +17926,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &869374556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36689,6 +36689,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6977986033280845565, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
+      propertyPath: crosshair
+      value: 
+      objectReference: {fileID: 913692573}
+    - target: {fileID: 6977986033280845565, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
       propertyPath: inventory
       value: 
       objectReference: {fileID: 295045445}
@@ -36700,6 +36704,10 @@ PrefabInstance:
       propertyPath: dragIconImage
       value: 
       objectReference: {fileID: 1509855143}
+    - target: {fileID: 6977986033280845565, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
+      propertyPath: itemHoverText
+      value: 
+      objectReference: {fileID: 997602176}
     - target: {fileID: 6977986033280845565, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
       propertyPath: combatController
       value: 
@@ -58760,11 +58768,11 @@ SceneRoots:
   m_Roots:
   - {fileID: 480191950}
   - {fileID: 81702072}
+  - {fileID: 869374559}
   - {fileID: 1300032234}
   - {fileID: 162232982}
   - {fileID: 132067497}
   - {fileID: 1581048608}
   - {fileID: 376965348}
   - {fileID: 1029889800}
-  - {fileID: 869374559}
   - {fileID: 2099064301}
