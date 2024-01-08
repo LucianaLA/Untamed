@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,7 @@ public class LevelController : MonoBehaviour
 {
     //portal
     public GameObject portal;
+    public float distance;
 
     //win popup
     public GameObject winPopup;
@@ -19,11 +21,13 @@ public class LevelController : MonoBehaviour
 
     //reference player camera movement during popup
     public FPSController FPSController;
+    public GameObject player;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        distance = 1.5f;
         enablePopup = false;
         //access player script to get player movement
         FPSController = GameObject.Find("Player").GetComponent<FPSController>();
@@ -39,17 +43,17 @@ public class LevelController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Enemies killed:" + counterKill);
+        // Debug.Log("Enemies killed:" + counterKill);
 
     }
 
     void FixedUpdate()
     {
-        if(enablePopup==false)
+        if (enablePopup == false)
         {
             CheckWinCondition();
         }
-        
+
     }
 
     //check if player met condition to win level and unlock portal
@@ -58,11 +62,11 @@ public class LevelController : MonoBehaviour
         if (counterKill == killCondition)
         {
             enablePopup = true;
-            showPopup();
+            ShowPopup();
         }
     }
 
-    void showPopup()
+    void ShowPopup()
     {
         Debug.Log("Player Won");
         Time.timeScale = 0f;
@@ -73,20 +77,21 @@ public class LevelController : MonoBehaviour
         Cursor.visible = true;
     }
 
-    //spawn portal in front of player
-    void SpawnPortal()
-    {
-
-    }
 
     //close win popup
-    public void onClose()
+    public void OnClose()
     {
         Time.timeScale = 1f;
         winPopup.SetActive(false);
         FPSController.enableMove = true;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        SpawnPortal();
+    }
 
+    //spawn portal in front of player
+    void SpawnPortal()
+    {
+        Instantiate(portal, (player.transform.forward * distance) + player.transform.position, Quaternion.identity);
     }
 }
