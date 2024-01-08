@@ -1782,9 +1782,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7971611001125329850, guid: 2cf1597d43dae7643b969e201abd583d, type: 3}
-      insertIndex: 1
-      addedObject: {fileID: 199331943}
-    - targetCorrespondingSourceObject: {fileID: 7971611001125329850, guid: 2cf1597d43dae7643b969e201abd583d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 199331937}
     - targetCorrespondingSourceObject: {fileID: 7971611001125329850, guid: 2cf1597d43dae7643b969e201abd583d, type: 3}
@@ -2096,9 +2093,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6342632843698898676, guid: 272bdef0631c26a42b8174b6881ba615, type: 3}
-      insertIndex: 1
-      addedObject: {fileID: 1314907115}
     - targetCorrespondingSourceObject: {fileID: 6342632843698898676, guid: 272bdef0631c26a42b8174b6881ba615, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1314907111}
@@ -5161,23 +5155,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &199331943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 199331932}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b4fdc6b6d2ba4c128846f3e10547d37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: Sword
-  description: New Description
-  icon: {fileID: 21300000, guid: c0ea4b6e528e7fe4aa6cdc94d38691a1, type: 3}
-  currentQuantity: 1
-  maxQuantity: 1
 --- !u!4 &199331944 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7343973877012988160, guid: 2cf1597d43dae7643b969e201abd583d, type: 3}
@@ -7382,9 +7359,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6428144754400928712, guid: 08685037f1f2fbf42a2c0ec91d066a8d, type: 3}
-      insertIndex: 1
-      addedObject: {fileID: 344587158}
-    - targetCorrespondingSourceObject: {fileID: 6428144754400928712, guid: 08685037f1f2fbf42a2c0ec91d066a8d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 344587153}
     - targetCorrespondingSourceObject: {fileID: 6428144754400928712, guid: 08685037f1f2fbf42a2c0ec91d066a8d, type: 3}
@@ -8164,23 +8138,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &344587158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 344587148}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b4fdc6b6d2ba4c128846f3e10547d37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: Axe
-  description: New Description
-  icon: {fileID: 21300000, guid: c03fbd6f990a8a54680cdd21777738e1, type: 3}
-  currentQuantity: 1
-  maxQuantity: 1
 --- !u!4 &344587159 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5944341614442576242, guid: 08685037f1f2fbf42a2c0ec91d066a8d, type: 3}
@@ -13133,7 +13090,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b4fdc6b6d2ba4c128846f3e10547d37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Axe
+  name: Battle Axe
   description: New Description
   icon: {fileID: 21300000, guid: c03fbd6f990a8a54680cdd21777738e1, type: 3}
   currentQuantity: 1
@@ -37265,23 +37222,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1314907115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1314907104}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b4fdc6b6d2ba4c128846f3e10547d37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: Small Axe
-  description: New Description
-  icon: {fileID: 21300000, guid: 556def944fd02f54c98ac89a1fd817a7, type: 3}
-  currentQuantity: 1
-  maxQuantity: 1
 --- !u!1001 &1317758149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39312,7 +39252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b4fdc6b6d2ba4c128846f3e10547d37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Small Axe
+  name: Throwing Axe
   description: New Description
   icon: {fileID: 21300000, guid: 556def944fd02f54c98ac89a1fd817a7, type: 3}
   currentQuantity: 1
