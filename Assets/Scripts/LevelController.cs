@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class LevelController : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class LevelController : MonoBehaviour
 
     //enemy kill counter
     public int counterKill;
+    public TextMeshProUGUI counterText;
     //number of kills to win
     public int killCondition;
 
@@ -36,7 +38,7 @@ public class LevelController : MonoBehaviour
         Scene scene = SceneManager.GetActiveScene();
 
         //win condition for level 1
-        if (scene.name == "Level 1")
+        if (scene.name == "Level 1 - Backup" || scene.name == "Level 1")
         {
             killCondition = 1;
         }
@@ -51,8 +53,7 @@ public class LevelController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Debug.Log("Enemies killed:" + counterKill);
-
+        counterText.text = "Ghosts to kill: " + killCondition +"\nGhosts killed: " + counterKill;
     }
 
     void FixedUpdate()

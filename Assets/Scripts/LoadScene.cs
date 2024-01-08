@@ -12,11 +12,24 @@ public class GameLoader : MonoBehaviour
         {
             //get current scene
             Scene scene = SceneManager.GetActiveScene();
+
+            //portal to level 2
             if (scene.name == "Level 1")
+            {
+                SceneManager.LoadSceneAsync("Level 2");
+            }
+
+            //portal to level 3
+            if (scene.name == "Level 2")
+            {
+                SceneManager.LoadSceneAsync("Level 3");
+            }
+
+            //portal to end cutscene
+            if (scene.name == "Level 2")
             {
                 SceneManager.LoadSceneAsync("EndCutscene");
             }
-            
         }
     }
 }
