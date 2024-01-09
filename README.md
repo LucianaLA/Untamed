@@ -35,3 +35,33 @@ The Ultimate Developer (2020) LINEAR - RADIAL TIMER COUNTDOWN | Unity Tutorials 
 Zyger (2021) Melee Combat & Weapon System - Unity Beginner Tutorial https://www.youtube.com/watch?v=aNZw588BQBo (Accessed 23/12/2023)
 
 Tarodev (2021) HEALTHBAR in Unity - [Unity Tutorial] https://www.youtube.com/watch?v=6U_OZkFtyxY (Accessed 01/01/2024)
+
+Free HDR Skyboxes Pack Available at: https://assetstore.unity.com/packages/2d/textures-materials/sky/free-hdr-skyboxes-pack-175525
+
+3 Skyboxes 2 Available at: https://assetstore.unity.com/packages/2d/textures-materials/sky/3-skyboxes-2-25582
+
+Galaxy Fire Skybox: https://assetstore.unity.com/packages/2d/textures-materials/galaxy-fire-skybox-10976
+
+Medieval Town Exteriors: https://assetstore.unity.com/packages/3d/environments/fantasy/medieval-town-exteriors-27026
+
+Simple Low Poly Nature Pack: https://assetstore.unity.com/packages/3d/environments/landscapes/simple-low-poly-nature-pack-157552
+
+Free Snow Mountain: https://assetstore.unity.com/packages/3d/environments/landscapes/free-snow-mountain-63002#releases
+
+AshMoor - Lowpoly Environment by Unvik_3D: https://assetstore.unity.com/packages/3d/environments/landscapes/ashmoor-lowpoly-environment-by-unvik-3d-203646
+
+Fortress Watchtower: https://assetstore.unity.com/packages/3d/environments/fantasy/fortress-watchtower-16779
+
+3LE Low Poly Cloud Pack: https://assetstore.unity.com/packages/3d/3le-low-poly-cloud-pack-65911
+
+FX Fire II: https://assetstore.unity.com/packages/vfx/particles/fire-explosions/fx-fire-ii-25176
+
+3D Cartoon Village: https://assetstore.unity.com/packages/3d/environments/fantasy/3d-cartoon-village-126869
+
+Happy music: https://assetstore.unity.com/packages/audio/music/orchestral/free-orchestral-music-pack-189885
+
+Creepy music: https://assetstore.unity.com/packages/audio/music/electronic/dark-future-music-3777
+
+Terrain Sample Asset Pack: https://assetstore.unity.com/packages/3d/environments/landscapes/terrain-sample-asset-pack-145808
+
+Fantasy landscape: https://assetstore.unity.com/packages/3d/environments/fantasy-landscape-103573
