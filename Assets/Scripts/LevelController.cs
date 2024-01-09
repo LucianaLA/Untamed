@@ -9,7 +9,9 @@ public class LevelController : MonoBehaviour
 {
     //portal
     public GameObject portal;
-    public float distance;
+   public GameObject cat;
+    public float portalDistance;
+    public float catDistance;
 
     //win popup
     public GameObject winPopup;
@@ -29,7 +31,8 @@ public class LevelController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        distance = 5f;
+        portalDistance = 5f;
+        catDistance = 3f;
         enablePopup = false;
         //access player script to get player movement
         FPSController = GameObject.Find("Player").GetComponent<FPSController>();
@@ -59,7 +62,7 @@ public class LevelController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        counterText.text = "Ghosts to kill: " + killCondition +"\nGhosts killed: " + counterKill;
+        counterText.text = "Ghosts to kill: " + killCondition + "\nGhosts killed: " + counterKill;
     }
 
     void FixedUpdate()
@@ -78,7 +81,20 @@ public class LevelController : MonoBehaviour
         {
             enablePopup = true;
             ShowPopup();
-            SpawnPortal();
+
+            //get current scene
+            Scene scene = SceneManager.GetActiveScene();
+
+            //win condition for level 1
+            if (scene.name != "Level 3")
+            {
+                SpawnPortal();
+            }
+
+            else
+            {
+                SpawnCat();
+            }
         }
     }
 
@@ -107,6 +123,46 @@ public class LevelController : MonoBehaviour
     //spawn portal in front of player
     void SpawnPortal()
     {
-        Instantiate(portal, (player.transform.forward * distance) + player.transform.position, Quaternion.identity);
+        Instantiate(portal, (player.transform.forward * portalDistance) + player.transform.position, Quaternion.identity);
     }
+
+    void SpawnCat()
+    {
+        Instantiate(cat, (player.transform.forward * catDistance) + player.transform.position, Quaternion.identity);
+    }
+
+
+    //restart level
+    public void RestartLevel()
+    {
+        //get current scene
+        Scene scene = SceneManager.GetActiveScene();
+
+        //restart level 1
+        if (scene.name == "Level 3")
+        {
+            SceneManager.LoadSceneAsync("Level 1");
+        }
+
+        //restart level 3
+        if (scene.name == "Level 3")
+        {
+            SceneManager.LoadSceneAsync("Level 2");
+        }
+
+        //restart level 3
+        if (scene.name == "Level 3")
+        {
+            SceneManager.LoadSceneAsync("Level 3");
+        }
+
+    }
+
+    //go back to main menu
+
+    public void BackToMenu()
+    {
+        SceneManager.LoadSceneAsync("MainMenu");
+    }
+
 }
