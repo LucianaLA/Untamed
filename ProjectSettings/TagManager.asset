@@ -6,18 +6,21 @@ TagManager:
   tags:
   - PickUp
   - Enemy
+  - EnemyDrop
+  - Weapon
+  - Item
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - IsGround
+  - 
   - Water
   - UI
-  - PickUp
-  - NavMesh
   - Player
-  - 
-  - 
+  - NavMesh
+  - Pickup
+  - EnemyDrop
+  - Item
   - 
   - 
   - 

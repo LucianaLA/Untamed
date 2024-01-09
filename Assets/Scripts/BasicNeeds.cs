@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,36 +7,105 @@ using UnityEngine.UI;
 public class BasicNeeds : MonoBehaviour
 {
     
-    public GameObject lose_popup;
+    //popups when game loses
+    public GameObject loseHealth_popup;
+    public GameObject loseHunger_popup;
+
+    //pops up when game is won
+    public GameObject win_popup;
+
+    //placeholder background for popup
+    public GameObject background;
+
+    //player stat bars
     public Image hunger_bar_foreground;
     public Image health_bar_foreground;
-    public GameObject background;
+
+    // combat energy UI
+    public Image combat_energy_fg;
+
+    public FPSController fPSController;
+    public GameObject energy_full_popup;
+
+    //stat bar amounts
     public static float hunger_remaining;
     public static float health_remaining;
-    public float hunger_max = 60.0f;
-    public float health_max = 60.0f;
+    public float hunger_max;
+    public float health_max;
+
+    //checkers
+    public static bool is_dead = false;
+    public static bool win_check = false;
+
+    //time win condition counter
+    public float time_count = 100f;
+    
     
     // Start is called before the first frame update
     void Start()
     {
+        hunger_max = 200f;
+        health_max = 300f;
         hunger_remaining = hunger_max;
         health_remaining = health_max;
+    }
+
+    void Update()
+    {
+        //decrease hunger 
+        hunger_remaining -= Time.deltaTime;
+        //count how long has passed
+        time_count += Time.deltaTime;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(hunger_remaining > 0)
+        //determine fill amount of bars while game has not been won
+        if(hunger_remaining > 0 && win_check == false)
         {
-            hunger_remaining -= Time.deltaTime;
             hunger_bar_foreground.fillAmount = hunger_remaining / hunger_max;
             health_bar_foreground.fillAmount = health_remaining / hunger_max;
         }
-        else{
-            lose_popup.SetActive(true);
-            // health_bar_foreground.SetActive(false);
-            background.SetActive(true);
 
+        //display lose popup if hunger runs out and empty health bar
+        else if (hunger_remaining < 0 && win_check == false && is_dead == false){
+            is_dead = true;
+            loseHunger_popup.SetActive(true);
+            health_bar_foreground.gameObject.SetActive(false);
+            background.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
+
+        //display lose popup if health runs out and empty hunger bar
+        if(health_remaining < 0 && is_dead == false && win_check == false)
+        {
+            is_dead = true;
+            loseHealth_popup.SetActive(true);
+            hunger_bar_foreground.gameObject.SetActive(false);
+            background.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+        //win after certain time if health and hunger are not depleated
+        // if(hunger_remaining > 0 && health_remaining > 0 && time_count >= 60.0f){
+        //     win_check = true;
+        //     EnemyController.enableWalk = false;
+        //     win_popup.SetActive(true);
+        //     background.SetActive(true);
+
+        // }
+
+        if(fPSController.attack_energy >= fPSController.max_energy)
+        {   
+            combat_energy_fg.fillAmount = Mathf.MoveTowards(combat_energy_fg.fillAmount, fPSController.attack_energy / fPSController.max_energy, 3*Time.deltaTime);
+            energy_full_popup.SetActive(true);
+            combat_energy_fg.rectTransform.sizeDelta = new Vector2(20+ UnityEngine.Random.Range(-1.0f, 1.0f), 20 + UnityEngine.Random.Range(-1.0f, 1.0f));
+        }
+        else{ 
+            energy_full_popup.SetActive(false);
+            combat_energy_fg.fillAmount = Mathf.MoveTowards(combat_energy_fg.fillAmount, fPSController.attack_energy / fPSController.max_energy, 3*Time.deltaTime);
+            }
     }
 }
