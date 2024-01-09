@@ -21,7 +21,9 @@ Once the hunger reaches 0, the health will also go down and you will lose the ga
 
 Go wild, untamed child!
 
-References
+## References
+
+### Tutorials
 All Things Game Dev (2022) How To Make An FPS Player In Under A Minute - Unity Tutorial - Available at: https://www.youtube.com/watch?v=qQLvcS9FxnY (Accessed 02/11/2023)
 
 Dave / GameDevelopment (2022) FIRST PERSON MOVEMENT in 10 MINUTES - Unity Tutorial Available at: https://youtu.be/f473C43s8nE?si=HdD8u5RVlUbn8Wcj (Accessed 18/10/2023)
@@ -35,6 +37,8 @@ The Ultimate Developer (2020) LINEAR - RADIAL TIMER COUNTDOWN | Unity Tutorials 
 Zyger (2021) Melee Combat & Weapon System - Unity Beginner Tutorial https://www.youtube.com/watch?v=aNZw588BQBo (Accessed 23/12/2023)
 
 Tarodev (2021) HEALTHBAR in Unity - [Unity Tutorial] https://www.youtube.com/watch?v=6U_OZkFtyxY (Accessed 01/01/2024)
+
+## Assets
 
 Free HDR Skyboxes Pack Available at: https://assetstore.unity.com/packages/2d/textures-materials/sky/free-hdr-skyboxes-pack-175525
 
@@ -65,3 +69,20 @@ Creepy music: https://assetstore.unity.com/packages/audio/music/electronic/dark-
 Terrain Sample Asset Pack: https://assetstore.unity.com/packages/3d/environments/landscapes/terrain-sample-asset-pack-145808
 
 Fantasy landscape: https://assetstore.unity.com/packages/3d/environments/fantasy-landscape-103573
+
+Cat: https://assetstore.unity.com/packages/3d/characters/animals/mammals/cartoon-cat-70180
+Ghost: https://assetstore.unity.com/packages/3d/characters/creatures/ghost-character-free-267003
+Chicken: https://assetstore.unity.com/packages/3d/characters/animals/meshtint-free-chick-mega-toon-series-152777
+Girl NPC: https://assetstore.unity.com/packages/3d/characters/humanoids/humans/anime-girl-character-akane-214048
+
+UI Assets:
+Buttons: https://nectanebo.itch.io/menu-buttons
+Backgrounds:
+https://saurabhkgp.itch.io/the-dawn-parallax-background
+https://potat0master.itch.io/free-visual-novel-backgrounds-starter-pack-2
+
+Music and SFX:
+https://tallbeard.itch.io/music-loop-bundle
+https://coloralpha.itch.io/50-menu-interface-sfx
+
+
