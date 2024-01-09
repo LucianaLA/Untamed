@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class EnemyController : MonoBehaviour
 {
     //enemy stats
+    public float enemy_maxhealth = 100f;
     public float enemy_health = 100f;
     public EnemyHealthbar healthbar;
     GameObject player;

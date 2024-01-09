@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SettingsController : MonoBehaviour
 {
 
     public FPSController FPSController;
+    public GameObject information;
     public GameObject settings;
     public GameObject tutorialPanel;
     public GameObject tutorial1;
@@ -22,13 +24,14 @@ public class SettingsController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ShowTutorial();
+        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (tutorialPanel.activeInHierarchy)
+        if (information.activeInHierarchy)
         {
             FPSController.enableMove = false;
             Time.timeScale = 0f;
@@ -48,8 +51,15 @@ public class SettingsController : MonoBehaviour
 
     }
 
+    //close information and show tutorial
+    public void CloseInformation()
+    {
+        information.SetActive(false);
+        ShowTutorial();
+    }
+
     //tutorial manager
-    public void onClose()
+    public void CloseTutorial()
     {
         tutorialPanel.SetActive(false);
         Time.timeScale = 1f;

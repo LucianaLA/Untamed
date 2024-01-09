@@ -23,6 +23,7 @@ public class FPSController : MonoBehaviour
     CharacterController characterController;
     //COMBAT SYSTEM 
     public CombatController combatController;
+    public BasicNeeds BasicNeeds;
 
     public GameObject Combat;
 
@@ -31,6 +32,7 @@ public class FPSController : MonoBehaviour
 
     public float max_energy = 7;
     public bool energyFull = false;
+
     //player stats
     public float hungerCount;
     public float healthCount;
@@ -42,6 +44,7 @@ public class FPSController : MonoBehaviour
 
     void Start()
     {
+        BasicNeeds = GameObject.Find("BasicNeeds_Controller").GetComponent<BasicNeeds>();
         characterController = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -121,6 +124,11 @@ public class FPSController : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             BasicNeeds.hunger_remaining += hungerCount;
+            //stop pickup from overloading hunger level
+            if(BasicNeeds.hunger_remaining > BasicNeeds.hunger_max)
+            {
+                BasicNeeds.hunger_remaining = BasicNeeds.hunger_max + 5f;
+            }
             Debug.Log("Hunger increased");
             //set respawn time
             StartCoroutine(Respawn(other, 25));

@@ -60,7 +60,7 @@ public class Inventory : MonoBehaviour
         // check if item is in inventory when active
         if (Input.GetKeyDown(KeyCode.F) && inventory.activeInHierarchy)
         {
-            // Check if an item with the name "YourItemName" is in the inventory
+            // Check if active item is in the inventory
             Item weaponItem = IsItemInInventory(combatController.GetActiveWeapon());
             Debug.Log("active weapon: " + combatController.GetActiveWeapon());
 
@@ -87,7 +87,7 @@ public class Inventory : MonoBehaviour
             Item item = slot.getItem();
             if (item != null && item.name == weaponItem.name)
             {
-                totalQuantity += item.currentQuantity;
+                totalQuantity += 1;
 
             }
         }
@@ -103,9 +103,10 @@ public class Inventory : MonoBehaviour
                 {
                     weapon.enhancementLevel += 1;
                     weapon.base_attack = weapon.enhancementLevel * weapon.base_attack;
-                    dropItem();
+                    // dropItem();
                     weaponItem.gameObject.SetActive(false);
                     Destroy(weaponItem.gameObject);
+                    Debug.Log(weaponItem+" has been destroyed... or has it");
                 }
             }
         }
