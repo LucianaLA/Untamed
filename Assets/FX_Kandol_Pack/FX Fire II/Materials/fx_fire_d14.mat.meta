@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 90ea7a4af00afcf4d841e4a6d8fa319e
+guid: 3e57f63bae481ce4b93a49de0c5e5612
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 0
@@ -11,5 +11,5 @@ AssetOrigin:
   productId: 25176
   packageName: FX Fire II
   packageVersion: 1.1
-  assetPath: Assets/FX_Kandol_Pack/FX Fire II/Prefabs/FX_Fire_Loop2.prefab
+  assetPath: Assets/FX_Kandol_Pack/FX Fire II/Materials/fx_fire_d14.mat
   uploadId: 524153
