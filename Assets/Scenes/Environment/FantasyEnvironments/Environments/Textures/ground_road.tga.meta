@@ -79,5 +79,5 @@ AssetOrigin:
   productId: 103573
   packageName: Fantasy landscape
   packageVersion: 1.1
-  assetPath: Assets/FantasyEnvironments/Environments/Textures/ground_road.tga
+  assetPath: Assets/Scenes/Environment/FantasyEnvironments/Environments/Textures/ground_road.tga
   uploadId: 366541

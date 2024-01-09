@@ -12,5 +12,5 @@ AssetOrigin:
   productId: 103573
   packageName: Fantasy landscape
   packageVersion: 1.1
-  assetPath: Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Materials/Birch_bark.mat
+  assetPath: Assets/Scenes/Environment/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Materials/Birch_bark.mat
   uploadId: 366541
