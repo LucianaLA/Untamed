@@ -70,6 +70,11 @@ Terrain Sample Asset Pack: https://assetstore.unity.com/packages/3d/environments
 
 Fantasy landscape: https://assetstore.unity.com/packages/3d/environments/fantasy-landscape-103573
 
+Cat: https://assetstore.unity.com/packages/3d/characters/animals/mammals/cartoon-cat-70180
+Ghost: https://assetstore.unity.com/packages/3d/characters/creatures/ghost-character-free-267003
+Chicken: https://assetstore.unity.com/packages/3d/characters/animals/meshtint-free-chick-mega-toon-series-152777
+Girl NPC: https://assetstore.unity.com/packages/3d/characters/humanoids/humans/anime-girl-character-akane-214048
+
 UI Assets:
 Buttons: https://nectanebo.itch.io/menu-buttons
 Backgrounds:
