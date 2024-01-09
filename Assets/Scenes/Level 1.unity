@@ -44936,6 +44936,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 964547087}
     - target: {fileID: 6489808810476760032, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
+      propertyPath: healthCount
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6489808810476760032, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
+      propertyPath: hungerCount
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6489808810476760032, guid: 5e620fc5615f3b343be0a3280d83ee4b, type: 3}
       propertyPath: combatController
       value: 
       objectReference: {fileID: 637032992}
