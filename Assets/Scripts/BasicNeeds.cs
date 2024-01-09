@@ -74,6 +74,8 @@ public class BasicNeeds : MonoBehaviour
             loseHunger_popup.SetActive(true);
             health_bar_foreground.gameObject.SetActive(false);
             background.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
 
         //display lose popup if health runs out and empty hunger bar
@@ -83,6 +85,8 @@ public class BasicNeeds : MonoBehaviour
             loseHealth_popup.SetActive(true);
             hunger_bar_foreground.gameObject.SetActive(false);
             background.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
         //win after certain time if health and hunger are not depleated
         // if(hunger_remaining > 0 && health_remaining > 0 && time_count >= 60.0f){
