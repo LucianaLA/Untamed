@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DayNightCycle : MonoBehaviour
+public class DayNight : MonoBehaviour
 {
-    public Light dayLight;
-    public Light sunsetLight;
-    public Light nightLight;
+    public Light day;
+    public Light sunset;
+    public Light night;
     // Set to 15 minutes for the entire cycle.
     public float dayDuration = 900.0f; // 15 minutes * 60 seconds
 
@@ -23,15 +23,14 @@ public class DayNightCycle : MonoBehaviour
         // If the cycleProgress exceeds 1, a full cycle has passed, so reset the timer
         if (cycleProgress > 1) 
         {
-            timer = 0.0f; // Reset the cycle for the next day
+            timer = 0.0f; // Reset the cycle 
         }
 
-        // Determine which light should be enabled based on the cycle progress
         // Daytime for the first 5 minutes
-        dayLight.enabled = cycleProgress <= (5f / 15f);
+        day.enabled = cycleProgress <= (5f / 15f);
         // Sunset for the next 5 minutes
-        sunsetLight.enabled = cycleProgress > (5f / 15f) && cycleProgress <= (10f / 15f);
+        sunset.enabled = cycleProgress > (5f / 15f) && cycleProgress <= (10f / 15f);
         // Nighttime for the last 5 minutes
-        nightLight.enabled = cycleProgress > (10f / 15f);
+        night.enabled = cycleProgress > (10f / 15f);
     }
 }
