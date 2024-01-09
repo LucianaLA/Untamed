@@ -48,6 +48,12 @@ public class LevelController : MonoBehaviour
         {
             killCondition = 2;
         }
+
+        //win condition for level 2
+        if (scene.name == "Level 3")
+        {
+            killCondition = 3;
+        }
     }
 
     // Update is called once per frame

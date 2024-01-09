@@ -24,7 +24,7 @@ public class SettingsController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
 
     }
 
@@ -54,8 +54,25 @@ public class SettingsController : MonoBehaviour
     //close information and show tutorial
     public void CloseInformation()
     {
+
         information.SetActive(false);
-        ShowTutorial();
+
+        //get current scene
+        Scene scene = SceneManager.GetActiveScene();
+
+        //win condition for level 1
+        if (scene.name == "Level 1")
+        {
+            ShowTutorial();
+        }
+        else
+        {
+            information.SetActive(false);
+            Time.timeScale = 1f;
+            FPSController.enableMove = true;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
     }
 
     //tutorial manager
@@ -115,14 +132,16 @@ public class SettingsController : MonoBehaviour
         basicNeeds.health_max = 100;
     }
 
-    private Weapon GetWeaponObj(){
+    private Weapon GetWeaponObj()
+    {
         GameObject[] weapons = GameObject.FindGameObjectsWithTag(weaponTag);
         foreach (GameObject weaponObject in weapons)
         {
             Weapon weaponController = weaponObject.GetComponent<Weapon>();
             //enemy health
             return weaponController;
-        } return null;
+        }
+        return null;
     }
     private void GetWeapons(float atkChange)
     {
@@ -132,7 +151,7 @@ public class SettingsController : MonoBehaviour
             Weapon weaponController = weaponObject.GetComponent<Weapon>();
             //enemy health
             float currentatk = weaponController.base_attack;
-            weaponController.base_attack -= (currentatk/atkChange);
+            weaponController.base_attack -= (currentatk / atkChange);
             Debug.Log("weapon atk: " + weaponController.base_attack);
         }
     }
