@@ -41,7 +41,7 @@ public class LevelController : MonoBehaviour
         Scene scene = SceneManager.GetActiveScene();
 
         //win condition for level 1
-        if (scene.name == "Level 1")
+        if (scene.name == "Level 1 Test")
         {
             killCondition = 5;
         }
