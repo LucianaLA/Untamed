@@ -141,7 +141,7 @@ public class EnemyController : MonoBehaviour
             else{
                 Enemy.gameObject.SetActive(false);
                 FPSController fPSController = player.GetComponent<FPSController>();
-                fPSController.healthCount += 20;
+                fPSController.healthCount += 50;
             }
         }
     }

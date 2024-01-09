@@ -124,6 +124,7 @@ public class FPSController : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             BasicNeeds.hunger_remaining += hungerCount;
+            BasicNeeds.health_remaining += healthCount;
             //stop pickup from overloading hunger level
             if(BasicNeeds.hunger_remaining > BasicNeeds.hunger_max)
             {
