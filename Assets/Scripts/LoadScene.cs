@@ -26,7 +26,7 @@ public class GameLoader : MonoBehaviour
             }
 
             //portal to end cutscene
-            if (scene.name == "Level 2")
+            if (scene.name == "Level 3")
             {
                 SceneManager.LoadSceneAsync("EndCutscene");
             }
