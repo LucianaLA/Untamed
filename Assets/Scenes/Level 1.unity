@@ -39455,9 +39455,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8a756fd7e77536468d477eccc73e0d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  day: {fileID: 0}
-  sunset: {fileID: 0}
-  night: {fileID: 0}
+  day: {fileID: 1659233819}
+  sunset: {fileID: 1302612598}
+  night: {fileID: 1881947277}
   dayDuration: 900
 --- !u!1001 &1109547165
 PrefabInstance:
@@ -52665,9 +52665,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b4b18bf3ac81b847859d6261742e330, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  day: {fileID: 0}
-  sunset: {fileID: 0}
-  night: {fileID: 0}
+  day: {fileID: 2100000, guid: e042e3a075d43734cb2151822f3efb89, type: 2}
+  sunset: {fileID: 2100000, guid: b7b81ebbe36017a489fa9efb826111de, type: 2}
+  night: {fileID: 2100000, guid: a4f78a684965a2d4bbc20a4b86231606, type: 2}
 --- !u!1001 &1594638331
 PrefabInstance:
   m_ObjectHideFlags: 0

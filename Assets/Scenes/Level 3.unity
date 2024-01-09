@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -44275,9 +44275,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8a756fd7e77536468d477eccc73e0d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dayLight: {fileID: 1659233819}
-  sunsetLight: {fileID: 1302612598}
-  nightLight: {fileID: 1881947277}
+  day: {fileID: 1659233819}
+  sunset: {fileID: 1302612598}
+  night: {fileID: 1881947277}
   dayDuration: 900
 --- !u!1001 &1109896814
 PrefabInstance:
@@ -59600,10 +59600,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b4b18bf3ac81b847859d6261742e330, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  daySkybox: {fileID: 2100000, guid: 69e10e886d52d20478f9ed5424126be8, type: 2}
-  sunsetSkybox: {fileID: 2100000, guid: 69e10e886d52d20478f9ed5424126be8, type: 2}
-  nightSkybox: {fileID: 2100000, guid: 69e10e886d52d20478f9ed5424126be8, type: 2}
-  volcanoSkybox: {fileID: 2100000, guid: 69e10e886d52d20478f9ed5424126be8, type: 2}
+  day: {fileID: 2100000, guid: 69e10e886d52d20478f9ed5424126be8, type: 2}
+  sunset: {fileID: 2100000, guid: 69e10e886d52d20478f9ed5424126be8, type: 2}
+  night: {fileID: 2100000, guid: 69e10e886d52d20478f9ed5424126be8, type: 2}
 --- !u!1001 &1594638331
 PrefabInstance:
   m_ObjectHideFlags: 0
