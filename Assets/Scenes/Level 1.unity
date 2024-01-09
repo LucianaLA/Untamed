@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3106,11 +3106,11 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: levelController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 237553807}
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 637032992}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -203.92
@@ -15256,11 +15256,11 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: levelController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 237553807}
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 637032992}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -871
@@ -17310,6 +17310,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hovered: 0
   thisSlotQuantityText: {fileID: 1704011141}
+--- !u!4 &823741812 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5267375580205094505, guid: 90ea7a4af00afcf4d841e4a6d8fa319e, type: 3}
+  m_PrefabInstance: {fileID: 1093729281}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &835643379
 GameObject:
   m_ObjectHideFlags: 0
@@ -24361,11 +24366,11 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: levelController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 237553807}
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 637032992}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -206
@@ -30769,11 +30774,11 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: levelController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 237553807}
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 637032992}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1017
@@ -31618,11 +31623,11 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: levelController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 237553807}
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 637032992}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -321
@@ -32145,11 +32150,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90ea7a4af00afcf4d841e4a6d8fa319e, type: 3}
---- !u!4 &1093729282 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: 90ea7a4af00afcf4d841e4a6d8fa319e, type: 3}
-  m_PrefabInstance: {fileID: 1093729281}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1096993022
 GameObject:
   m_ObjectHideFlags: 0
@@ -36171,11 +36171,11 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: levelController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 237553807}
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 637032992}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -321
@@ -42668,11 +42668,11 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: levelController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 237553807}
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 637032992}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 41.9
@@ -52834,11 +52834,11 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: levelController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 237553807}
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 637032992}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -40.23
@@ -56278,11 +56278,11 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: levelController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 237553807}
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 637032992}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -283
@@ -56553,12 +56553,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1093729282}
   - {fileID: 715924393}
   - {fileID: 1139284170}
   - {fileID: 1514453601}
   - {fileID: 576271810}
   - {fileID: 635014787}
+  - {fileID: 823741812}
   m_Father: {fileID: 162232982}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2023889609
