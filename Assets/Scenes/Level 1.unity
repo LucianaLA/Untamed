@@ -5425,6 +5425,10 @@ PrefabInstance:
       value: Chicken
       objectReference: {fileID: 0}
     - target: {fileID: 2473869537544817392, guid: 519cc20e410a4c443bb71b5bf52eacfa, type: 3}
+      propertyPath: isChicken
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2473869537544817392, guid: 519cc20e410a4c443bb71b5bf52eacfa, type: 3}
       propertyPath: levelController
       value: 
       objectReference: {fileID: 237553807}
@@ -5434,15 +5438,15 @@ PrefabInstance:
       objectReference: {fileID: 637032992}
     - target: {fileID: 3412859087258527243, guid: 519cc20e410a4c443bb71b5bf52eacfa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 973.95526
+      value: 1925.79
       objectReference: {fileID: 0}
     - target: {fileID: 3412859087258527243, guid: 519cc20e410a4c443bb71b5bf52eacfa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 193.5051
+      value: 192.1413
       objectReference: {fileID: 0}
     - target: {fileID: 3412859087258527243, guid: 519cc20e410a4c443bb71b5bf52eacfa, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 439.9047
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 3412859087258527243, guid: 519cc20e410a4c443bb71b5bf52eacfa, type: 3}
       propertyPath: m_LocalRotation.w

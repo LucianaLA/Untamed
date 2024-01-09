@@ -33,6 +33,7 @@ public class EnemyController : MonoBehaviour
 
     //enemy kill counter
     public LevelController levelController;
+    public bool isChicken;
 
     void Start()
     {
@@ -43,7 +44,7 @@ public class EnemyController : MonoBehaviour
         rb.freezeRotation = true;
         animator = GetComponent<Animator>();
         levelController = GameObject.Find("LevelController").GetComponent<LevelController>();
-      
+
     }
 
     void Update()
@@ -55,7 +56,7 @@ public class EnemyController : MonoBehaviour
         if (playerInSight && !playerInAttackRange) Chase();
         if (playerInSight && playerInAttackRange) Attack();
 
-        
+
     }
 
 
@@ -65,7 +66,7 @@ public class EnemyController : MonoBehaviour
         enemy.SetDestination(player.transform.position);
         animator.SetBool("isAttacking", false);
         animator.SetBool("isChasing", true);
-        
+
     }
 
     //enemy attack player function
@@ -74,12 +75,13 @@ public class EnemyController : MonoBehaviour
         animator.SetBool("isAttacking", true);
     }
 
-    
+
     //enemy on patrol function
     void Patrol()
     {
         if (!enableWalk) SetNewDest();
-        if (enableWalk) {
+        if (enableWalk)
+        {
             enemy.SetDestination(newDestination);
             animator.SetBool("isChasing", false);
             animator.SetBool("isAttacking", false);
@@ -103,7 +105,8 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    IEnumerator DeathAnimation(GameObject Enemy){
+    IEnumerator DeathAnimation(GameObject Enemy)
+    {
         Debug.Log("code runs coroutine.");
         yield return new WaitForSeconds(2f);
         DropItem(Enemy);
@@ -113,22 +116,33 @@ public class EnemyController : MonoBehaviour
         Debug.Log("code runs death.");
     }
 
-    public void DropItem(GameObject Enemy){
-        int i = Random.Range(0,3);
+    public void DropItem(GameObject Enemy)
+    {
+        int i = Random.Range(0, 3);
         //drop item
         GameObject droppedItem = Instantiate(combatController.ItemDrop[i], new Vector3(Enemy.transform.position.x + Random.Range(-1.0f, 1.0f),
                                                     transform.position.y, Enemy.transform.position.z + Random.Range(-1.0f, 1.0f)),
                                                     Enemy.transform.rotation);
-        Debug.Log(droppedItem+" item has been dropped.");
-        
+        Debug.Log(droppedItem + " item has been dropped.");
+
         droppedItem.SetActive(true);
     }
-    public void EnemyDeath(GameObject Enemy){
-        if (enemy_health <= 0){
-            Debug.Log("Enemy died: "+ Enemy);
-            Animator anim = Enemy.GetComponent<Animator>();
-            anim.SetTrigger("ghostDeath");
-            StartCoroutine(DeathAnimation(Enemy));
+    public void EnemyDeath(GameObject Enemy)
+    {
+        if (enemy_health <= 0)
+        {
+            Debug.Log("Enemy died: " + Enemy);
+            if (!isChicken)
+            {
+                Animator anim = Enemy.GetComponent<Animator>();
+                anim.SetTrigger("ghostDeath");
+                StartCoroutine(DeathAnimation(Enemy));
+            }
+            else{
+                Enemy.gameObject.SetActive(false);
+                FPSController fPSController = player.GetComponent<FPSController>();
+                fPSController.healthCount += 20;
+            }
         }
     }
 }
