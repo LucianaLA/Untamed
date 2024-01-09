@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9334,7 +9334,6 @@ Transform:
   - {fileID: 2055141351}
   - {fileID: 1421350790}
   - {fileID: 1555391818}
-  - {fileID: 608767543}
   m_Father: {fileID: 162232982}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &304903145
@@ -17875,59 +17874,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &608767542
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 608767543}
-  - component: {fileID: 608767544}
-  m_Layer: 0
-  m_Name: Collider
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &608767543
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 608767542}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 52, y: 0, z: -26}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 304389543}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &608767544
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 608767542}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 400, y: 500, z: 400}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &611351462
 GameObject:
   m_ObjectHideFlags: 0
@@ -39509,9 +39455,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8a756fd7e77536468d477eccc73e0d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dayLight: {fileID: 1659233819}
-  sunsetLight: {fileID: 1302612598}
-  nightLight: {fileID: 1881947277}
+  day: {fileID: 0}
+  sunset: {fileID: 0}
+  night: {fileID: 0}
   dayDuration: 900
 --- !u!1001 &1109547165
 PrefabInstance:
@@ -52719,10 +52665,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b4b18bf3ac81b847859d6261742e330, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  daySkybox: {fileID: 2100000, guid: e042e3a075d43734cb2151822f3efb89, type: 2}
-  sunsetSkybox: {fileID: 2100000, guid: b7b81ebbe36017a489fa9efb826111de, type: 2}
-  nightSkybox: {fileID: 2100000, guid: a4f78a684965a2d4bbc20a4b86231606, type: 2}
-  volcanoSkybox: {fileID: 2100000, guid: 69e10e886d52d20478f9ed5424126be8, type: 2}
+  day: {fileID: 0}
+  sunset: {fileID: 0}
+  night: {fileID: 0}
 --- !u!1001 &1594638331
 PrefabInstance:
   m_ObjectHideFlags: 0
