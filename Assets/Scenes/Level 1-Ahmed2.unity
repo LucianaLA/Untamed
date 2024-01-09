@@ -596,7 +596,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -565
@@ -2483,7 +2483,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 38.85
@@ -2615,7 +2615,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -202.3805
@@ -3073,7 +3073,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -205.89648
@@ -4015,7 +4015,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -924.6
@@ -4796,7 +4796,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -203.92
@@ -6115,7 +6115,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -40.23
@@ -6247,7 +6247,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -666.3
@@ -8730,7 +8730,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 41.9
@@ -10849,7 +10849,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -565
@@ -11207,7 +11207,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -574.6
@@ -11396,7 +11396,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -198.9
@@ -12552,7 +12552,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.7
@@ -13213,7 +13213,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 41.9
@@ -13595,7 +13595,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -787
@@ -14477,7 +14477,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -198.8
@@ -15533,7 +15533,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -471.4
@@ -15603,7 +15603,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -203.42285
@@ -17726,7 +17726,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -565
@@ -17796,7 +17796,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -206
@@ -18481,7 +18481,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -565
@@ -19680,7 +19680,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -283
@@ -26365,7 +26365,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -438.4
@@ -26860,7 +26860,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -471.4
@@ -27314,7 +27314,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -203.03
@@ -34334,7 +34334,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -871
@@ -34682,7 +34682,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 47.69
@@ -34826,7 +34826,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -198.5
@@ -36750,7 +36750,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -871
@@ -37018,7 +37018,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -203.92
@@ -37287,7 +37287,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -390.6
@@ -37868,7 +37868,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -208.74023
@@ -38070,7 +38070,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -194.2
@@ -39054,7 +39054,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -771.2
@@ -39186,7 +39186,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -565
@@ -39926,7 +39926,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -571.5
@@ -40120,7 +40120,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -411.9
@@ -40388,7 +40388,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -202.88342
@@ -40894,7 +40894,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -871
@@ -42277,7 +42277,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -596.97
@@ -45218,7 +45218,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -560.84
@@ -46792,7 +46792,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -554.6
@@ -46936,7 +46936,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -602.6
@@ -47265,7 +47265,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -589
@@ -48487,7 +48487,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -321
@@ -50763,7 +50763,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -321
@@ -51370,7 +51370,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -565
@@ -52639,7 +52639,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -632.1
@@ -58990,7 +58990,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -539.8
@@ -59060,7 +59060,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 45.08
@@ -59966,7 +59966,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 35.55
@@ -60246,7 +60246,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -871
@@ -60750,7 +60750,7 @@ PrefabInstance:
     - target: {fileID: 627847169960167305, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: combatController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 825273012}
     - target: {fileID: 2327447997022569900, guid: 933e8cf3d75226f4a910f0539dea9da5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -194.2
@@ -64447,7 +64447,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   portal: {fileID: 1855917497094103076, guid: cf1d6bcc7a03a7d4a830bde283ba8933, type: 3}
-  distance: 0
+  cat: {fileID: 0}
+  portalDistance: 0
+  catDistance: 0
   winPopup: {fileID: 0}
   enablePopup: 0
   counterKill: 0
