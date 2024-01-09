@@ -4,16 +4,13 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    public AudioSource m; 
-    public AudioSource se; 
-
-    public void ToggleMusic(bool enabled)
+    public void ToggleOn()
     {
-        m.mute = !enabled;
+        AudioListener.volume = 1;
     }
 
-    public void ToggleSoundEffects(bool enabled)
+    public void ToggleOff()
     {
-        se.mute = !enabled;
+       AudioListener.volume = 0;
     }
 }
