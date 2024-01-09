@@ -55,7 +55,7 @@ public class LevelController : MonoBehaviour
         //win condition for level 2
         if (scene.name == "Level 3")
         {
-            killCondition = 25;
+            killCondition = 1;
         }
     }
 
