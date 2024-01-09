@@ -9,7 +9,7 @@ public class LevelController : MonoBehaviour
 {
     //portal
     public GameObject portal;
-   public GameObject cat;
+    public GameObject cat;
     public float portalDistance;
     public float catDistance;
 
@@ -41,7 +41,7 @@ public class LevelController : MonoBehaviour
         Scene scene = SceneManager.GetActiveScene();
 
         //win condition for level 1
-        if (scene.name == "Level 1 Test")
+        if (scene.name == "Level 1")
         {
             killCondition = 5;
         }
@@ -55,7 +55,7 @@ public class LevelController : MonoBehaviour
         //win condition for level 2
         if (scene.name == "Level 3")
         {
-            killCondition = 3;
+            killCondition = 1;
         }
     }
 
@@ -129,6 +129,7 @@ public class LevelController : MonoBehaviour
     void SpawnCat()
     {
         Instantiate(cat, (player.transform.forward * catDistance) + player.transform.position, Quaternion.identity);
+        SpawnPortal();
     }
 
 
