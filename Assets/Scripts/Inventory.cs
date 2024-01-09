@@ -105,7 +105,7 @@ public class Inventory : MonoBehaviour
                     weapon.base_attack = weapon.enhancementLevel * weapon.base_attack;
                     // dropItem();
                     weaponItem.gameObject.SetActive(false);
-                    Destroy(weaponItem.gameObject);
+                    // Destroy(weaponItem.gameObject);
                     Debug.Log(weaponItem+" has been destroyed... or has it");
                 }
             }
