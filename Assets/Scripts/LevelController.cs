@@ -29,7 +29,7 @@ public class LevelController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        distance = 1.5f;
+        distance = 5f;
         enablePopup = false;
         //access player script to get player movement
         FPSController = GameObject.Find("Player").GetComponent<FPSController>();
@@ -38,9 +38,9 @@ public class LevelController : MonoBehaviour
         Scene scene = SceneManager.GetActiveScene();
 
         //win condition for level 1
-        if (scene.name == "Level 1 - Backup" || scene.name == "Level 1")
+        if (scene.name == "Level 1")
         {
-            killCondition = 1;
+            killCondition = 5;
         }
 
         //win condition for level 2
