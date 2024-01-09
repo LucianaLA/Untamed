@@ -21,8 +21,9 @@ Once the hunger reaches 0, the health will also go down and you will lose the ga
 
 Go wild, untamed child!
 
-References:
-(Tutorials)
+## References
+
+### Tutorials
 All Things Game Dev (2022) How To Make An FPS Player In Under A Minute - Unity Tutorial - Available at: https://www.youtube.com/watch?v=qQLvcS9FxnY (Accessed 02/11/2023)
 
 Dave / GameDevelopment (2022) FIRST PERSON MOVEMENT in 10 MINUTES - Unity Tutorial Available at: https://youtu.be/f473C43s8nE?si=HdD8u5RVlUbn8Wcj (Accessed 18/10/2023)
@@ -37,7 +38,7 @@ Zyger (2021) Melee Combat & Weapon System - Unity Beginner Tutorial https://www.
 
 Tarodev (2021) HEALTHBAR in Unity - [Unity Tutorial] https://www.youtube.com/watch?v=6U_OZkFtyxY (Accessed 01/01/2024)
 
-(Assets)
+## Assets
 
 Free HDR Skyboxes Pack Available at: https://assetstore.unity.com/packages/2d/textures-materials/sky/free-hdr-skyboxes-pack-175525
 
