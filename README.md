@@ -7,21 +7,21 @@ Link to the prototype on WebGL: https://nafisa-x.github.io/UntamedGame/Build/ind
 How to play
 This is a survival RPG, the goal is to survive for as long as possible in an unfamiliar environment with limited tools at your disposal.
 
-Look around by moving your mouse
-To move use WASD keys on the keyboard
-To sprint, hold Left Shift and move using WASD
-To jump, press the Space bar
-The game currently contains enemies which will pursue and attack once near enough, if the enemy touches the player, health will be depleted
-There is food scattered around the map, walk into them to replenish hunger
-Enemies will drop energy crystals which can be collected to release a stronger attack
-Once a player obtains a new weapon, it can be switched by using the keys 1-4
-Use E to open inventory and F to enhance existing weapons and Q to drop a weapon from inventory
-Chickens are friendly NPCs which when killed replenish health
-Once the hunger reaches 0, the health will also go down and you will lose the game
+-Look around by moving your mouse
+-To move use WASD keys on the keyboard
+-To sprint, hold Left Shift and move using WASD
+-To jump, press the Space bar
+-The game currently contains enemies which will pursue and attack once near enough, if the enemy touches the player, health will be depleted
+-There is food scattered around the map, walk into them to replenish hunger
+-Enemies will drop energy crystals which can be collected to release a stronger attack
+-Once a player obtains a new weapon, it can be switched by using the keys 1-4
+-Use E to open inventory and F to enhance existing weapons and Q to drop a weapon from inventory
+-Chickens are friendly NPCs which when killed replenish health
+-Once the hunger reaches 0, the health will also go down and you will lose the game
 
-The game has 3 difficulty levels which the player can pick from and 3 different levels to clear the game
-To switch levels, approach a nearby portal
-To toggle settings, press P
+-The game has 3 difficulty levels which the player can pick from and 3 different levels to clear the game
+-To switch levels, approach a nearby portal
+-To toggle settings, press P
 
 Go wild, untamed child!
 
